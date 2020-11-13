@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}PI szab\IeC {\'a}lyz\IeC {\'o} tervez\IeC {\'e}se p\IeC {\'o}lus-z\IeC {\'e}rus kiejt\IeC {\'e}ssel}{3}{section.1}
+\contentsline {subsection}{\numberline {a}P \IeC {\'e}s I param\IeC {\'e}terek sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {b}Egys\IeC {\'e}gugr\IeC {\'a}s v\IeC {\'a}lasz}{4}{subsection.1.2}
+\contentsline {subsection}{\numberline {c}\IeC {\'A}lland\IeC {\'o}sult sz\IeC {\"o}gsebess\IeC {\'e}g}{4}{subsection.1.3}
+\contentsline {section}{\numberline {2}PD szab\IeC {\'a}lyz\IeC {\'o} tervez\IeC {\'e}se p\IeC {\'o}lus-z\IeC {\'e}rus kiejt\IeC {\'e}ssel}{5}{section.2}
+\contentsline {subsection}{\numberline {a}P \IeC {\'e}s D param\IeC {\'e}terek sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {b}Egys\IeC {\'e}gugr\IeC {\'a}s v\IeC {\'a}lasz}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {c}\IeC {\'A}lland\IeC {\'o}sult sz\IeC {\"o}gsebess\IeC {\'e}g}{6}{subsection.2.3}

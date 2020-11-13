@@ -1,0 +1,6 @@
+1_feladat/
+build/
+.gitignore
+*swp
+*fuse_hidden*
+*vim_sup*

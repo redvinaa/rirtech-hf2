@@ -1,0 +1,52 @@
+=>PYTHONTEX#py#default#default#0#code####py_init.tex#1#
+###############
+## Python3.7 ##
+###############
+
+import matplotlib.pyplot as plt
+import numpy as np
+import sympy as sy
+from   control.matlab import *
+from   matplotlib import rc
+
+## Matplotlib ábrákra LaTeX typesetting
+rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
+rc('text', usetex=True)
+
+## Kerekítések szimbolikus kifejezésben
+def round_expr(expr, num_digits):
+	return expr.xreplace({n : round(n, num_digits) for n in expr.atoms(sy.Number)})
+
+## Nevező legnagyobb együtthatója 1
+def LC1(w):
+	nd = w.as_numer_denom()
+	LC = sy.LC(nd[1])
+	return sy.N(nd[0]/LC) / sy.N(nd[1]/LC)
+
+class adat: # adatok ----------------------------------------
+	pass
+=>PYTHONTEX:SETTINGS#
+version=0.16
+outputdir=pythontex-files-main
+workingdir=.
+workingdirset=false
+gobble=none
+rerun=default
+hashdependencies=default
+makestderr=false
+stderrfilename=full
+keeptemps=none
+pyfuture=default
+pyconfuture=none
+pygments=true
+pygglobal=:GLOBAL||
+fvextfile=-1
+pyconbanner=none
+pyconfilename=stdin
+depythontex=false
+pygfamily=py|python|
+pygfamily=pycon|pycon|
+pygfamily=sympy|python|
+pygfamily=sympycon|pycon|
+pygfamily=pylab|python|
+pygfamily=pylabcon|pycon|

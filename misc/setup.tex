@@ -1,0 +1,73 @@
+\graphicspath{{./figures/}}
+\pagestyle{fancy}
+% \fancyhead[L]{Mechatronika házi feladat}
+\fancyhead[L]{Réda Vince, Z697LX}
+\fancyfoot[C]{\thepage}
+% \fancyfoot[R]{Z697LX}
+\linespread{1.5}
+\geometry{margin=2.5cm}
+\floatsetup[table]{capposition=top}
+
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+\renewcommand{\thesubsection}{\alph{subsection}}
+
+\setlength\parindent{0mm}
+\setlength\parskip{10pt}
+
+\lstset{showstringspaces=false}
+\lstset{
+	inputencoding=utf8/latin1,
+	lineskip=1mm,
+	language=Python,
+	numbers=left,
+	tabsize=4,
+	numbersep=5mm,
+	framexleftmargin=10mm,
+	frame=single,
+	framerule=0.3mm,
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\color{blue}\ttfamily\bfseries,
+	stringstyle=\color{red}\ttfamily,
+	commentstyle=\color{magenta}\ttfamily,
+	morecomment=[l][\color{magenta}\bfseries]{\#TODO}
+}
+
+\PassOptionsToPackage{usenames, dvipsnames}{xcolor}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor   = red %Colour of citations
+}
+
+\makeatletter
+\def\incfig{\@ifnextchar[{\@with}{\@without}}
+\def\@with[#1]#2{\def\svgwidth{#1} \import{./figures/}{#2.pdf_tex}}
+\def\@without#1{\def\svgwidth{\columnwidth} \import{./figures/}{#1.pdf_tex}}
+\makeatother
+
+\makeatletter
+\renewcommand{\p@subsection}{\thesection.}
+\makeatother
+
+\newcommand\un{u_\text{n}}
+\newcommand\km{k_\text{m}}
+\newcommand\ke{k_\text{e}}
+\newcommand\ks{k_\text{s}}
+\newcommand\Ra{R_\text{a}}
+\newcommand\La{L_\text{a}}
+\newcommand\Ja{J_\text{a}}
+\newcommand\T{^\text{T}}
+\newcommand\fn[1]{\mathrm{#1}}
+\newcommand\B[1]{\boldsymbol{\mathrm{#1}}}
+\newcommand\at[1]{\bigg\rvert_{#1}}
+\newcommand\tild{\textasciitilde}
+\newcommand\sothat{$~\rightarrow~$}
+\newcommand\mat[1]{\begin{bmatrix}#1\end{bmatrix}} 
+\newcommand\abs[1]{\left\lvert #1 \right\rvert}
+\newcommand\norm[1]{\left\lVert #1 \right\rVert}
+\newcommand\unit[1]{~\left[\text{#1}\right]}
+\newcommand\brc[1]{\left(#1\right)}
+\newcommand\reals{\mathbb{R}}
+\newcommand\integers{\mathbb{Z}}
