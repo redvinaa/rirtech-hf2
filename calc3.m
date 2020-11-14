@@ -1,100 +1,92 @@
 clc
+clear
 disp('file: calc3.m')
-
-num_Ra = 11.1;
-num_La = 1.52e-3;
-num_km = 0.0582;
-num_ks = 17.17;
-num_ke = 0.05822;
-num_Ja = 4.46e-6;
-num_wn = 463.91;
-num_in = 0.804;
-num_un = 36;
-num_TI = 0.0145
 
 
 %% 3/a
 disp('3/a')
 
-syms s Ra La km ke Ja TI P;
+syms s w P TI T1 T2;
+un = 36;
+T1_num = 0.0145;
+T2_num = 1.3825e-4;
+A = 618.34/un;
+n = 0.1;
+phi_t = pi/3;
+w_nom = 4430/(2*pi);
+
+Wc = P* (1+s*TI)/(s*TI)
+Wp = A/( (1+s*T1) * (1+s*T2) );
+Wx = simplify(Wc*Wp / s);
+Wcl = Wx/(1+Wx);
+
+pretty(Wx)
+latex(Wx)
+
+phi = -pi - atan(T1*w) - atan(T2*w) + atan(TI*w)
+phi_num = -pi - atan(T1_num*w) - atan(T2_num*w) + atan(TI*w);
+phi_d = diff(phi, w)
+phi_d_num = diff(phi_num, w);
+wci = solve(phi_d_num, w);
+
+wci = simplify(wci)
+
+digits 10
+TIi = zeros(4, 1);
+
+% phi_subs = subs(phi, w, wci(1))
+% eq = pi - phi_t + phi_subs
+% solve(vpa(eq), TI)
+
+% phi_subs = subs(phi, w, wci(2))
+% eq = pi - phi_t + phi_subs
+% solve(vpa(eq), TI)
+
+% phi_subs = subs(phi, w, wci(3))
+% eq = pi - phi_t + phi_subs
+% solve(vpa(eq), TI)
+
+% csak a wci(4) megoldás helyes, a többinek vagy nincs megoldása,
+% vagy w<0, vagy w nem valós eredményt ad, ami értelmetlen
+phi_subs = subs(phi_num, w, wci(4))
+eq = pi - phi_t + phi_subs
+TI_num = double(solve(vpa(eq), TI))
+w_num = double(subs(wci(4), [TI], [TI_num]));
+assert( w_num >= 0);       % pipa
+assert( imag(w_num) == 0); % pipa
+
+Wx_num = subs(Wx, [T1 T2 TI s], [T1_num T2_num TI_num w_num]);
+P_num = solve(abs(Wx_num)-1, P);
+P_num = double(P_num)
+
+s = tf('s')
+Wc = P_num* (1+s*TI_num)/(s*TI_num)
+Wp = A/( (1+s*T1_num) * (1+s*T2_num) );
+Wx = minreal(Wc*Wp / s);
+Wcl = Wx/(1+Wx);
+
+% margin(Wx);grid
 
 
-Wel = 1/(Ra + La*s);
-Wme = 1/(Ja*s);
+%% 3/b
+disp('3/b')
 
-
-Wx_p = Wel*Wme*km;
-Wf_p = ke;
-Wp = simplify(Wx_p/(1+Wx_p*Wf_p));
-
-Wc = P*(1 + 1/(TI*s));
-
-Wx = Wc*Wp;
-Wo = Wx/(1+Wx);
-Wo = simplify(Wo);
-disp('Closed loop transfer function')
-latex(Wo)
-
-[Wo_num, Wo_den] = numden(Wo);
-disp('Karakterisztikus egyenlet')
-latex(Wo_den)
-
-num_Wo_den = subs(Wo_den, [Ja, Ra, TI, La, ke, km], [num_Ja, num_Ra, num_TI, num_La, num_ke, num_km])
-disp('Poles')
-pi = solve(num_Wo_den, s);
-pi = vpa(pi)
-
-arr_P = linspace(-20, 40, 1000);
-fun_p1 = symfun(pi(1), P);
-fun_p2 = symfun(pi(2), P);
-fun_p3 = symfun(pi(3), P);
-hold on
-plot(arr_P, real(fun_p1(arr_P)))
-plot(arr_P, real(fun_p2(arr_P)))
-plot(arr_P, real(fun_p3(arr_P)))
-legend('p1', 'p2', 'p3');grid;
-xlim([-1 1]);
-ylim([-1e3 1e3]);
-hold off
+step(2*pi*Wcl)
 title('')
-xlabel('körerősítés')
-ylabel('pólus valós része')
-
-%==============================================
+grid
 
 
-% clc
-% disp('file: num_calc3')
+%% 3/c
+disp('3/c')
 
-% s = tf('s');
-% P = 4.063
-% TI = 0.0145
-% parameters
+syms s
+Wc = P_num* (1+s*TI_num)/(s*TI_num)
+Wp = A/( (1+s*T1_num) * (1+s*T2_num) );
+Wx = simplify(Wc*Wp / s);
+Wcl = Wx/(1+Wx);
 
+X = 2*pi/s;
+Y = Wcl * X;
 
-% Wel = 1/(Ra + La*s);
-% Wme = 1/(Ja*s);
-
-
-% %% 3/a
-% disp('3/a')
-
-
-% Wx_p = Wel*Wme*km;
-% Wf_p = ke;
-% % Wp = minreal(ke * Wx_p/(1+Wx_p*Wf_p));
-% Wp = minreal(Wx_p/(1+Wx_p*Wf_p));
-
-% Wc = P*(1 + 1/(TI*s));
-
-% Wx = minreal(Wc*Wp);
-% Wo = Wx/(1+Wx);
-% Wo = minreal(Wo)
-
-% % bode(Wo, [1, 1e6]);grid;
-% % margin(Wx);grid;
-
-% % impulse(Wo*wn/2);grid;
-% step(Wo*wn/2);grid;
-% title('')
-% ylabel('szögsebesség (rad/s)')
+theta_inf = limit(Y*s, s, 0);
+theta_inf = double(theta_inf)

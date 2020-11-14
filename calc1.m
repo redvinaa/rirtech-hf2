@@ -17,7 +17,7 @@ w_nom = 4430/(2*pi)
 phi = -pi/2 - atan(T2*w);
 eq = phi + pi - phi_t;
 wc = solve(eq, w);
-wc = abs(double(wc))
+wc = double(wc)
 
 
 Wx = A*P/T1 * 1/(i*wc*(1+i*wc*T2));

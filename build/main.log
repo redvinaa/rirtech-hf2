@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.3)  13 NOV 2020 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.3)  14 NOV 2020 22:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1595,10 +1595,13 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 42.
 )
 (build/main.aux
 
-LaTeX Warning: Label `fig:1a_margin' multiply defined.
-
-
 LaTeX Warning: Label `fig:1b_step' multiply defined.
+
+
+LaTeX Warning: Label `fig:3a_margin' multiply defined.
+
+
+LaTeX Warning: Label `fig:3b_step' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -1630,17 +1633,17 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* modes: includehead includefoot heightrounded 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=455.24411pt
-* \textheight=702.78308pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-38.1381pt
-* \headheight=12.0pt
+* \textwidth=426.79135pt
+* \textheight=658.0pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-15.36449pt
+* \headheight=17.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
@@ -1846,42 +1849,28 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 \openout6 = `main.toc'.
 
 
-(./0_feladat.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.58502pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+(./0_feladat.texpdfTeX warning (ext4): destination with the same identifier (na
+me{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \clearpage
                [1]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
-<./figures/process-hatasvazlat.pdf, id=64, 1476.05481pt x 518.61069pt>
+<./figures/process-hatasvazlat.pdf, id=103, 1476.05481pt x 518.61069pt>
 File: ./figures/process-hatasvazlat.pdf Graphic file (type pdf)
 <use ./figures/process-hatasvazlat.pdf>
 Package pdftex.def Info: ./figures/process-hatasvazlat.pdf  used on input line 
 36.
-(pdftex.def)             Requested size: 409.71692pt x 143.95177pt.
-<./figures/pi-hatasvazlat.pdf, id=65, 989.51163pt x 283.89572pt>
+(pdftex.def)             Requested size: 384.1096pt x 134.9543pt.
+<./figures/pi-hatasvazlat.pdf, id=104, 989.51163pt x 283.89572pt>
 File: ./figures/pi-hatasvazlat.pdf Graphic file (type pdf)
 <use ./figures/pi-hatasvazlat.pdf>
 Package pdftex.def Info: ./figures/pi-hatasvazlat.pdf  used on input line 43.
-(pdftex.def)             Requested size: 318.66948pt x 91.42462pt.
-) (./1_feladat.tex
+(pdftex.def)             Requested size: 298.75264pt x 85.71085pt.
+) (./1_feladat.tex [2
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.58502pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2
-
- <./figures/process-hatasvazlat.pdf> <./figures/pi-hatasvazlat.pdf
+] [3 <./figures/process-hatasvazlat.pdf> <./figures/pi-hatasvazlat.pdf
 
 pdfTeX warning: pdflatex (file ./figures/pi-hatasvazlat.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
@@ -1890,88 +1879,84 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 33.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<./figures/1a_margin.pdf, id=79, 614.295pt x 794.97pt>
+<./figures/1a_margin.pdf, id=122, 614.295pt x 794.97pt>
 File: ./figures/1a_margin.pdf Graphic file (type pdf)
 <use ./figures/1a_margin.pdf>
 Package pdftex.def Info: ./figures/1a_margin.pdf  used on input line 36.
-(pdftex.def)             Requested size: 364.19667pt x 252.92389pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.58502pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[3 <./figures/1a_margin.pdf>]
-<./figures/1b_step.pdf, id=180, 614.295pt x 794.97pt>
+(pdftex.def)             Requested size: 341.43437pt x 237.11786pt.
+ [4]
+<./figures/1b_step.pdf, id=136, 614.295pt x 794.97pt>
 File: ./figures/1b_step.pdf Graphic file (type pdf)
 <use ./figures/1b_step.pdf>
 Package pdftex.def Info: ./figures/1b_step.pdf  used on input line 56.
-(pdftex.def)             Requested size: 364.19667pt x 252.92389pt.
-) (./2_feladat.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.58502pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4 <./figures/1b_step.pdf>]
-File: ./figures/1a_margin.pdf Graphic file (type pdf)
-<use ./figures/1a_margin.pdf>
-Package pdftex.def Info: ./figures/1a_margin.pdf  used on input line 37.
-(pdftex.def)             Requested size: 364.19667pt x 252.92389pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.58502pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[5]
+(pdftex.def)             Requested size: 341.43437pt x 237.11786pt.
+ [5 <./figures/1a_margin.pdf>]) (./2_feladat.tex [6 <./figures/1b_step.pdf>]
+<./figures/2a_margin.pdf, id=268, 614.295pt x 794.97pt>
+File: ./figures/2a_margin.pdf Graphic file (type pdf)
+<use ./figures/2a_margin.pdf>
+Package pdftex.def Info: ./figures/2a_margin.pdf  used on input line 38.
+(pdftex.def)             Requested size: 341.43437pt x 237.11786pt.
+ [7]
 File: ./figures/1b_step.pdf Graphic file (type pdf)
 <use ./figures/1b_step.pdf>
-Package pdftex.def Info: ./figures/1b_step.pdf  used on input line 57.
-(pdftex.def)             Requested size: 364.19667pt x 252.92389pt.
-) (./misc/bib.tex
+Package pdftex.def Info: ./figures/1b_step.pdf  used on input line 58.
+(pdftex.def)             Requested size: 341.43437pt x 237.11786pt.
+ [8 <./figures/2a_margin.pdf>]) (./3_feladat.tex [9]
+<./figures/pi-hatasvazlat-2.pdf, id=314, 1168.328pt x 283.89572pt>
+File: ./figures/pi-hatasvazlat-2.pdf Graphic file (type pdf)
+<use ./figures/pi-hatasvazlat-2.pdf>
+Package pdftex.def Info: ./figures/pi-hatasvazlat-2.pdf  used on input line 11.
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.58502pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+(pdftex.def)             Requested size: 298.75264pt x 72.59387pt.
+<./figures/3a_margin.pdf, id=315, 614.295pt x 794.97pt>
+File: ./figures/3a_margin.pdf Graphic file (type pdf)
+<use ./figures/3a_margin.pdf>
+Package pdftex.def Info: ./figures/3a_margin.pdf  used on input line 48.
+(pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
+ [10 <./figures/pi-hatasvazlat-2.pdf>]
+<./figures/3b_step.pdf, id=330, 614.295pt x 794.97pt>
+File: ./figures/3b_step.pdf Graphic file (type pdf)
+<use ./figures/3b_step.pdf>
+Package pdftex.def Info: ./figures/3b_step.pdf  used on input line 66.
+(pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
 
-[6]
+[11 <./figures/3a_margin.pdf> <./figures/3b_step.pdf>]) (./4_feladat.tex
+[12]
+File: ./figures/3a_margin.pdf Graphic file (type pdf)
+<use ./figures/3a_margin.pdf>
+Package pdftex.def Info: ./figures/3a_margin.pdf  used on input line 41.
+(pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
+ [13]
+File: ./figures/3b_step.pdf Graphic file (type pdf)
+<use ./figures/3b_step.pdf>
+Package pdftex.def Info: ./figures/3b_step.pdf  used on input line 59.
+(pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
+ [14]) (./misc/bib.tex [15]
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 [][]$\T1/pcr/m/n/10 https : / / www . maxongroup . com / maxon / view / product
- / motor / dcmotor / amax / amax32 /
+ / motor / dcmotor / amax /
  []
 
-)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.58502pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
+) [16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
  (build/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 37888 strings out of 492982
- 703659 string characters out of 6134897
- 855678 words of memory out of 5000000
- 40858 multiletter control sequences out of 15000+600000
- 576193 words of font info for 69 fonts, out of 8000000 for 9000
+ 37956 strings out of 492982
+ 704922 string characters out of 6134897
+ 855763 words of memory out of 5000000
+ 40886 multiletter control sequences out of 15000+600000
+ 573406 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,13n,54p,10398b,753s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1984,12 +1969,11 @@ sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfo
 nt/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/times/utmr8a.pfb>
-Output written on build/main.pdf (8 pages, 167814 bytes).
+xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on build/main.pdf (17 pages, 197821 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
- 37 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 474 PDF objects out of 1000 (max. 8388607)
+ 420 compressed objects within 5 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

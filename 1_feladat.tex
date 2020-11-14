@@ -16,7 +16,7 @@ Az előrevezető ág átviteli függvénye ekkor leegyszerűsödik:
 	\fn{W}_\text{x} = \frac{A}{\bcancel{(1+T_1s)}(1+T_2s)}P\frac{\bcancel{1+sT_\text{I} }}{sT_\text{I}}
 	= \frac{AP}{T_\text{1}}\frac{1}{s(1+sT_2)},
 \end{equation}
-ahol $T_1$ és $T_2$ a szabályozott szakasz időállandója, $A$ az erősítése.
+ahol $T_1$ és $T_2$ a szabályozott szakasz időállandója, $A$ a nullfrekvenciás erősítés.
 
 Most írjuk fel a fáziskésést az $s=j\omega$ helyettesítéssel.
 \begin{equation}
@@ -64,6 +64,7 @@ A PI-szabályozott rendszer egységugrás-válaszát a MATLAB-os \verb|step| fü
 \subsection{Állandósult szögsebesség}
 
 A bemenet legyen $\fn{X} = \frac{\omega_\text{ref}}{s}$, a rendszer válasz $\fn{Y} = \fn{W}_\text{cl}\fn{X}$.
-A végérték-tétel alapján $\omega_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 705,0564$.
+
+A végérték-tétel alapján az állandósult szögsebesség $\omega_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 705,0564$.
 
 %}}}

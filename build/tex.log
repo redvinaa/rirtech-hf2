@@ -201,10 +201,13 @@ zlibrarytopaths.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty))
 (build/main.aux
 
-LaTeX Warning: Label `fig:1a_margin' multiply defined.
-
-
 LaTeX Warning: Label `fig:1b_step' multiply defined.
+
+
+LaTeX Warning: Label `fig:3a_margin' multiply defined.
+
+
+LaTeX Warning: Label `fig:3b_step' multiply defined.
 
 ) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd)
 *geometry* driver: auto-detecting
@@ -230,69 +233,25 @@ ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd) (./misc/title.tex
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (build/main.toc)
-(./0_feladat.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.58502pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+(./0_feladat.texpdfTeX warning (ext4): destination with the same identifier (na
+me{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \clearpage
-               [1]) (./1_feladat.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.58502pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2 <./figures/process-hatasvazlat.pdf> <./figures/pi-hatasvazlat.pdf
+               [1]) (./1_feladat.tex [2] [3 <./figures/process-hatasvazlat.pdf>
+ <./figures/pi-hatasvazlat.pdf
 
 pdfTeX warning: pdflatex (file ./figures/pi-hatasvazlat.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
->] (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.58502pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[3 <./figures/1a_margin.pdf>]) (./2_feladat.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.58502pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4 <./figures/1b_step.pdf>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.58502pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[5]) (./misc/bib.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.58502pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[6]
+>] (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd) [4] [5 <./figures/
+1a_margin.pdf>]) (./2_feladat.tex [6 <./figures/1b_step.pdf>] [7] [8 <./figures
+/2a_margin.pdf>]) (./3_feladat.tex [9] [10 <./figures/pi-hatasvazlat-2.pdf>]
+[11 <./figures/3a_margin.pdf> <./figures/3b_step.pdf>]) (./4_feladat.tex
+[12] [13] [14]) (./misc/bib.tex [15]
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 [][]$\T1/pcr/m/n/10 https : / / www . maxongroup . com / maxon / view / product
- / motor / dcmotor / amax / amax32 /
-)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.58502pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[7] (build/main.aux)
+ / motor / dcmotor / amax /
+) [16] (build/main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -308,7 +267,6 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
-a.pfb>
-Output written on build/main.pdf (8 pages, 167814 bytes).
+urw/times/utmr8a.pfb>
+Output written on build/main.pdf (17 pages, 197821 bytes).
 Transcript written on build/main.log.
