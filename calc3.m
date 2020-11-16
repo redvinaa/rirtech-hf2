@@ -1,5 +1,6 @@
 clc
 clear
+digits 6
 disp('file: calc3.m')
 
 
@@ -15,7 +16,7 @@ n = 0.1;
 phi_t = pi/3;
 w_nom = 4430/(2*pi);
 
-Wc = P* (1+s*TI)/(s*TI)
+Wc = P* (1+s*TI)/s
 Wp = A/( (1+s*T1) * (1+s*T2) );
 Wx = simplify(Wc*Wp / s);
 Wcl = Wx/(1+Wx);
@@ -31,20 +32,6 @@ wci = solve(phi_d_num, w);
 
 wci = simplify(wci)
 
-digits 10
-TIi = zeros(4, 1);
-
-% phi_subs = subs(phi, w, wci(1))
-% eq = pi - phi_t + phi_subs
-% solve(vpa(eq), TI)
-
-% phi_subs = subs(phi, w, wci(2))
-% eq = pi - phi_t + phi_subs
-% solve(vpa(eq), TI)
-
-% phi_subs = subs(phi, w, wci(3))
-% eq = pi - phi_t + phi_subs
-% solve(vpa(eq), TI)
 
 % csak a wci(4) megoldás helyes, a többinek vagy nincs megoldása,
 % vagy w<0, vagy w nem valós eredményt ad, ami értelmetlen
@@ -60,12 +47,13 @@ P_num = solve(abs(Wx_num)-1, P);
 P_num = double(P_num)
 
 s = tf('s')
-Wc = P_num* (1+s*TI_num)/(s*TI_num)
+Wc = P_num* (1+s*TI_num)/s
 Wp = A/( (1+s*T1_num) * (1+s*T2_num) );
 Wx = minreal(Wc*Wp / s);
 Wcl = Wx/(1+Wx);
 
-% margin(Wx);grid
+margin(Wx);grid
+pause
 
 
 %% 3/b
@@ -74,13 +62,14 @@ disp('3/b')
 step(2*pi*Wcl)
 title('')
 grid
+pause
 
 
 %% 3/c
 disp('3/c')
 
 syms s
-Wc = P_num* (1+s*TI_num)/(s*TI_num)
+Wc = P_num* (1+s*TI_num)/s
 Wp = A/( (1+s*T1_num) * (1+s*T2_num) );
 Wx = simplify(Wc*Wp / s);
 Wcl = Wx/(1+Wx);

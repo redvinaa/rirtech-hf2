@@ -1,0 +1,47 @@
+\section{Szögsebesség szabályozás állapotvisszacsatolással}
+
+%{{{ Pólusok számítása
+\subsection{Pólusok számítása}
+
+Írjuk át a rendszerünket állapotteres alakra, valamint a $\fn{W}_\text{c}$ kontrollert
+cseréljük le a $\mathrm{K}_\text{x}$ és $\mathrm{K}_\text{r}$ állapotvisszacsatoló és
+alapjelkompenzáló mátrixokra.
+A $\mathrm{D}$ kimeneti mátrix esetünkben zérus, és egyenlőre az
+alapjelkompenzáló mátrix egységnyi.
+
+\begin{figure}[H]
+    \centering
+    \incfig[.8\textwidth]{5a_allapotter_hatasvazlat}
+    \caption{Állapottér modell hatásvázlata}
+    \label{fig:5a_allapotter_hatasvazlat}
+\end{figure}
+
+A rendszer átviteli függvény formában van megadva:
+\begin{equation}
+	\fn{W}_\text{p} = \frac{\Psi}{(1+T_1s)(1+T_2s)} = \frac{\Psi}{T_1T_2s^2+(T_1+T_2)s+1},
+\end{equation}
+amelynek a pólusai $p_1=-\frac{1}{T_1} = -68,97$ és $p_2=-\frac{1}{p_2} = -7233,3$.
+
+Írjuk át ezt állapottér modellre, irányíthatósági kanonikus alakra:
+\begin{equation}
+	\fn{Y} = \frac{\Psi}{T_1T_2s^2+(T_1+T_2)s+1}\fn{U}
+\end{equation}
+\begin{equation}
+	\fn{X} := \frac{}{T_1T_2s^2+(T_1+T_2)s+1}\fn{U}\,\Rightarrow
+\end{equation}
+\begin{equation}
+	u = T_1T_2\ddot{x} + (T_1+T_2)\dot{x} + x\,\Rightarrow
+\end{equation}
+\begin{equation}
+	\mat{\dot{x}\\\ddot{x}} = \mat{0&1\\\frac{1}{T_1T_2}&\frac{T_1+T_2}{T_1T_2}}\mat{x\\\dot{x}}
+	+ \mat{0\\1}u
+\end{equation}
+\begin{equation}
+	y = \mat{\Psi&0}\mat{x\\\dot{x}} + \mat{0}u
+\end{equation}
+
+A feladatkiírás alapján a domináns időállandó $\widetilde{T}_1=50~\text{ms}~=0,05$ s
+kell hogy legyen. A másik pedig valami.%TODO
+
+
+%}}}

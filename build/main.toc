@@ -14,3 +14,5 @@
 \contentsline {subsection}{\numberline {a}P, I \IeC {\'e}s D param\IeC {\'e}terek sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{13}{subsection.4.1}
 \contentsline {subsection}{\numberline {b}Egys\IeC {\'e}gugr\IeC {\'a}s v\IeC {\'a}lasz}{14}{subsection.4.2}
 \contentsline {subsection}{\numberline {c}\IeC {\'A}lland\IeC {\'o}sult sz\IeC {\"o}gsebess\IeC {\'e}g}{15}{subsection.4.3}
+\contentsline {section}{\numberline {5}Sz\IeC {\"o}gsebess\IeC {\'e}g szab\IeC {\'a}lyoz\IeC {\'a}s \IeC {\'a}llapotvisszacsatol\IeC {\'a}ssal}{16}{section.5}
+\contentsline {subsection}{\numberline {a}P\IeC {\'o}lusok sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{16}{subsection.5.1}

@@ -15,10 +15,10 @@ A módosított hatásvázlatot \aref{fig:pi-hatasvazlat-2}. ábra mutatja.
 
 Írjuk fel az előrevezető ág átviteli függvényét:
 \begin{equation}
-	\fn{W}_\text{x} = \fn{W}_\text{c}\fn{W}_\text{x}\frac{1}{s} = 
-	\frac{A\, P\, \left(T_\text{I}\, s + 1\right)}{T_\text{I}\, s^2\, \left(T_1\, s + 1\right)\, \left(T_2\, s + 1\right)},
+	\fn{W}_\text{x} = \fn{W}_\text{c}\fn{W}_\text{p}\frac{1}{s} = 
+	\frac{\Psi\, P\, \left(T_\text{I}\, s + 1\right)}{s^2\, \left(T_1\, s + 1\right)\, \left(T_2\, s + 1\right)},
 \end{equation}
-ahol $A$ a szabályozott szakasz erősítése.
+ahol $\Psi$ a szabályozott szakasz erősítése.
 
 Ezután írjuk fel a fázistolást a körfrekvencia függvényében:
 \begin{equation}
@@ -33,13 +33,13 @@ Ebből megkaptunk egy $\omega_\text{c}$ értéket, ami $T_\text{I}$-től függ.
 Ezt helyettesítsük be a fázistartalékhoz tartozó képletbe, ami kiadja $T_\text{I}$-t és
 ezáltal $\omega_\text{c}$ numerikus értékét is:
 \begin{equation}
-	\varphi_\text{t} = \pi + \varphi(\omega_\text{c}) \Rightarrow T_\text{I}.
+	\varphi_\text{t} = \pi + \varphi(\omega_\text{c}).
 \end{equation}
 Ebből $T_\text{I} = 0,204$ s, és $\omega_\text{c} = 18,2783~\frac{\text{rad}}{\text{s}}$.
 
 Már csak a $P$ körerősítést kell meghatároznunk, ami ugyanúgy történik mint az első feladatban:
 \begin{equation}
-	\abs{\fn{W}_\text{x}(\omega_\text{c})} = 1 \Rightarrow P = 1,0642.
+	\abs{\fn{W}_\text{x}(\omega_\text{c})} = 1 \Rightarrow P = 5,2163.
 \end{equation}
 
 Ellenőrizzük, hogy a fázistartalék tényleg $60^\circ$-e a \verb|margin| függvénnyel.
@@ -74,7 +74,7 @@ ki is rajzolja nekünk időtartományban, amit \aref{fig:3b_step}. ábra mutat.
 \subsection{Állandósult szögsebesség}
 
 Az előző részfeladatban kiszámolt kimenetet felhasználva az állandósult szög érték:
-$\omega_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 6,2832^\circ$.
+$\theta_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 6,2832$ rad.
 
 Az állandósult hiba a PI szabályzótól vártan zérus.
 
