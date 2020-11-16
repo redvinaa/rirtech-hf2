@@ -33,15 +33,39 @@ amelynek a pólusai $p_1=-\frac{1}{T_1} = -68,97$ és $p_2=-\frac{1}{p_2} = -723
 	u = T_1T_2\ddot{x} + (T_1+T_2)\dot{x} + x\,\Rightarrow
 \end{equation}
 \begin{equation}
-	\mat{\dot{x}\\\ddot{x}} = \mat{0&1\\\frac{1}{T_1T_2}&\frac{T_1+T_2}{T_1T_2}}\mat{x\\\dot{x}}
-	+ \mat{0\\1}u
+	\underbrace{\mat{\dot{x}\\\ddot{x}}}_{\dot{\B{x}}}
+	= \underbrace{\mat{0&1\\\frac{1}{T_1T_2}&\frac{T_1+T_2}{T_1T_2}}}_{\B{A}}
+	\underbrace{\mat{x\\\dot{x}}}_{\B{x}}
+	+ \underbrace{\mat{0\\1}}_{\B{B}}u
 \end{equation}
 \begin{equation}
-	y = \mat{\Psi&0}\mat{x\\\dot{x}} + \mat{0}u
+	y = \underbrace{\mat{\Psi&0}}_{\B{C}}\mat{x\\\dot{x}} + \underbrace{\mat{0}}_{\B{D}}u
 \end{equation}
 
 A feladatkiírás alapján a domináns időállandó $\widetilde{T}_1=50~\text{ms}~=0,05$ s
 kell hogy legyen. A másik pedig valami.%TODO
 
+A visszacsatolás miatt
+\begin{equation}
+	u = \B{K}_\text{r}\B{r} - \B{K}_\text{x}\B{x}
+\end{equation}
+\begin{equation}
+	\dot{\B{x}} = \B{A}\B{x} + \B{B}\B{K}_\text{r}\B{r} - \B{B}\B{K}_\text{x}\B{x}
+\end{equation}
+\begin{equation}
+	\dot{\B{x}} = \brc{\B{A}-\B{B}\B{K}_\text{x}}\B{x} + \B{B}\B{K}_\text{r}\B{r}
+\end{equation}
+Ebben a feladatrészben $\B{K}_\text{r} \equiv \B{I}$, tehát a referencia bemenetre nézve
+a $\B{B}$ bemeneti mátrix nem változik, az új rendszermátrix pedig $\widetilde{\B{A}} = \B{A}-\B{B}\B{K}_\text{x}$.
+A $\B{K}_\text{x}$ mátrixot úgy kell megválasztani, hogy az új rendszermátrix sajátértékei
+a kívánt pólusok legyenek.
+
+\begin{equation}
+	\widetilde{\B{A}} = \mat{0&1\\\frac{1}{T_1T_2}&\frac{T_1+T_2}{T_1T_2}} - 
+	\mat{0&0\\k_1&k_2} = \mat{0&1\\\frac{1}{T_1T_2}-k_1&\frac{T_1+T_2}{T_1T_2}-k_2}
+\end{equation}
+\begin{equation}
+	\det\widetilde{\B{A}} = k_1 - \frac{1}{T_1T_2} = 0\,\Rightarrow k_1=\frac{1}{T_1T_2}
+\end{equation}
 
 %}}}
