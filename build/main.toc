@@ -1,18 +1,27 @@
 \contentsline {section}{\numberline {1}PI szab\IeC {\'a}lyz\IeC {\'o} tervez\IeC {\'e}se p\IeC {\'o}lus-z\IeC {\'e}rus kiejt\IeC {\'e}ssel}{4}{section.1}
 \contentsline {subsection}{\numberline {a}P \IeC {\'e}s I param\IeC {\'e}terek sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{4}{subsection.1.1}
 \contentsline {subsection}{\numberline {b}Egys\IeC {\'e}gugr\IeC {\'a}s v\IeC {\'a}lasz}{5}{subsection.1.2}
-\contentsline {subsection}{\numberline {c}\IeC {\'A}lland\IeC {\'o}sult sz\IeC {\"o}gsebess\IeC {\'e}g}{6}{subsection.1.3}
-\contentsline {section}{\numberline {2}PD szab\IeC {\'a}lyz\IeC {\'o} tervez\IeC {\'e}se p\IeC {\'o}lus-z\IeC {\'e}rus kiejt\IeC {\'e}ssel}{7}{section.2}
-\contentsline {subsection}{\numberline {a}P \IeC {\'e}s D param\IeC {\'e}terek sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{7}{subsection.2.1}
-\contentsline {subsection}{\numberline {b}Egys\IeC {\'e}gugr\IeC {\'a}s v\IeC {\'a}lasz}{8}{subsection.2.2}
-\contentsline {subsection}{\numberline {c}\IeC {\'A}lland\IeC {\'o}sult sz\IeC {\"o}gsebess\IeC {\'e}g}{9}{subsection.2.3}
-\contentsline {section}{\numberline {3}PI poz\IeC {\'\i }ci\IeC {\'o} szab\IeC {\'a}lyoz\IeC {\'a}s szimmetrikus optimum m\IeC {\'o}dszerrel}{10}{section.3}
-\contentsline {subsection}{\numberline {a}P \IeC {\'e}s I param\IeC {\'e}terek sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{10}{subsection.3.1}
-\contentsline {subsection}{\numberline {b}Egys\IeC {\'e}gugr\IeC {\'a}s v\IeC {\'a}lasz}{11}{subsection.3.2}
-\contentsline {subsection}{\numberline {c}\IeC {\'A}lland\IeC {\'o}sult sz\IeC {\"o}gsebess\IeC {\'e}g}{12}{subsection.3.3}
-\contentsline {section}{\numberline {4}PID poz\IeC {\'\i }ci\IeC {\'o} szab\IeC {\'a}lyoz\IeC {\'a}s szimmetrikus optimum m\IeC {\'o}dszerrel}{13}{section.4}
-\contentsline {subsection}{\numberline {a}P, I \IeC {\'e}s D param\IeC {\'e}terek sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{13}{subsection.4.1}
-\contentsline {subsection}{\numberline {b}Egys\IeC {\'e}gugr\IeC {\'a}s v\IeC {\'a}lasz}{14}{subsection.4.2}
-\contentsline {subsection}{\numberline {c}\IeC {\'A}lland\IeC {\'o}sult sz\IeC {\"o}gsebess\IeC {\'e}g}{15}{subsection.4.3}
-\contentsline {section}{\numberline {5}Sz\IeC {\"o}gsebess\IeC {\'e}g szab\IeC {\'a}lyoz\IeC {\'a}s \IeC {\'a}llapotvisszacsatol\IeC {\'a}ssal}{16}{section.5}
-\contentsline {subsection}{\numberline {a}P\IeC {\'o}lusok sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{16}{subsection.5.1}
+\contentsline {subsection}{\numberline {c}\IeC {\'A}lland\IeC {\'o}sult sz\IeC {\"o}gsebess\IeC {\'e}g}{5}{subsection.1.3}
+\contentsline {section}{\numberline {2}PD szab\IeC {\'a}lyz\IeC {\'o} tervez\IeC {\'e}se p\IeC {\'o}lus-z\IeC {\'e}rus kiejt\IeC {\'e}ssel}{6}{section.2}
+\contentsline {subsection}{\numberline {a}P \IeC {\'e}s D param\IeC {\'e}terek sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {b}Egys\IeC {\'e}gugr\IeC {\'a}s v\IeC {\'a}lasz}{7}{subsection.2.2}
+\contentsline {subsection}{\numberline {c}\IeC {\'A}lland\IeC {\'o}sult sz\IeC {\"o}gsebess\IeC {\'e}g}{7}{subsection.2.3}
+\contentsline {section}{\numberline {3}PI poz\IeC {\'\i }ci\IeC {\'o} szab\IeC {\'a}lyoz\IeC {\'a}s szimmetrikus optimum m\IeC {\'o}dszerrel}{8}{section.3}
+\contentsline {subsection}{\numberline {a}P \IeC {\'e}s I param\IeC {\'e}terek sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{8}{subsection.3.1}
+\contentsline {subsection}{\numberline {b}Egys\IeC {\'e}gugr\IeC {\'a}s v\IeC {\'a}lasz}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {c}\IeC {\'A}lland\IeC {\'o}sult sz\IeC {\"o}gsebess\IeC {\'e}g}{10}{subsection.3.3}
+\contentsline {section}{\numberline {4}PID poz\IeC {\'\i }ci\IeC {\'o} szab\IeC {\'a}lyoz\IeC {\'a}s szimmetrikus optimum m\IeC {\'o}dszerrel}{11}{section.4}
+\contentsline {subsection}{\numberline {a}P, I \IeC {\'e}s D param\IeC {\'e}terek sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{11}{subsection.4.1}
+\contentsline {subsection}{\numberline {b}Egys\IeC {\'e}gugr\IeC {\'a}s v\IeC {\'a}lasz}{12}{subsection.4.2}
+\contentsline {subsection}{\numberline {c}\IeC {\'A}lland\IeC {\'o}sult sz\IeC {\"o}gsebess\IeC {\'e}g}{13}{subsection.4.3}
+\contentsline {section}{\numberline {5}Sz\IeC {\"o}gsebess\IeC {\'e}g szab\IeC {\'a}lyoz\IeC {\'a}s \IeC {\'a}llapotvisszacsatol\IeC {\'a}ssal}{14}{section.5}
+\contentsline {subsection}{\numberline {a}P\IeC {\'o}lusok sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{14}{subsection.5.1}
+\contentsline {subsection}{\numberline {b}A szab\IeC {\'a}lyoz\IeC {\'o} m\IeC {\'a}trix sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{15}{subsection.5.2}
+\contentsline {subsection}{\numberline {c}Ugr\IeC {\'a}sf\IeC {\"u}ggv\IeC {\'e}ny}{15}{subsection.5.3}
+\contentsline {subsection}{\numberline {d}\IeC {\'A}lland\IeC {\'o}sult \IeC {\'e}rt\IeC {\'e}k}{16}{subsection.5.4}
+\contentsline {subsection}{\numberline {e}Alapkompenz\IeC {\'a}ci\IeC {\'o} sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{16}{subsection.5.5}
+\contentsline {subsection}{\numberline {f}Alapjelkompenz\IeC {\'a}lt ugr\IeC {\'a}sv\IeC {\'a}lasz}{17}{subsection.5.6}
+\contentsline {subsection}{\numberline {g}\IeC {\'A}lland\IeC {\'o}sult \IeC {\'e}rt\IeC {\'e}k}{17}{subsection.5.7}
+\contentsline {subsection}{\numberline {h}Statikus alapjelkompenz\IeC {\'a}ci\IeC {\'o}}{17}{subsection.5.8}
+\contentsline {subsection}{\numberline {i}Statikus alapjelkompenz\IeC {\'a}lt ugr\IeC {\'a}sv\IeC {\'a}lasz}{18}{subsection.5.9}
+\contentsline {subsection}{\numberline {j}\IeC {\'A}lland\IeC {\'o}sult \IeC {\'e}rt\IeC {\'e}k}{18}{subsection.5.10}

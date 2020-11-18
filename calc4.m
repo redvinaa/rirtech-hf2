@@ -11,13 +11,13 @@ syms s w P TI TD T1 T2;
 un = 36;
 T1_num = 0.0145;
 T2_num = 1.3825e-4;
-A = 618.34/un;
+Psi = 618.34/un;
 n = 0.1;
 phi_t = pi/3;
 w_nom = 4430/(2*pi);
 
 Wc = P * (1+s*TI)/s * (1+s*T2)/(1+T2*n*s)
-Wp = A/( (1+s*T1) * (1+s*T2) );
+Wp = Psi/( (1+s*T1) * (1+s*T2) );
 Wx = simplify(Wc*Wp / s);
 Wcl = Wx/(1+Wx);
 
@@ -56,7 +56,7 @@ P_num = double(P_num)
 
 s = tf('s');
 Wc = P_num * (1+s*TI_num)/s * (1+s*T2_num)/(1+T2_num*n*s)
-Wp = A/( (1+s*T1_num) * (1+s*T2_num) );
+Wp = Psi/( (1+s*T1_num) * (1+s*T2_num) );
 Wx = minreal(Wc*Wp / s);
 Wcl = Wx/(1+Wx);
 
@@ -78,7 +78,7 @@ disp('4/c')
 
 syms s
 Wc = P_num * (1+s*TI_num)/s * (1+s*T2_num)/(1+T2_num*n*s)
-Wp = A/( (1+s*T1_num) * (1+s*T2_num) );
+Wp = Psi/( (1+s*T1_num) * (1+s*T2_num) );
 Wx = simplify(Wc*Wp / s);
 Wcl = Wx/(1+Wx);
 
