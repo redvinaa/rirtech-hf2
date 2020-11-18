@@ -25,3 +25,14 @@
 \contentsline {subsection}{\numberline {h}Statikus alapjelkompenz\IeC {\'a}ci\IeC {\'o}}{17}{subsection.5.8}
 \contentsline {subsection}{\numberline {i}Statikus alapjelkompenz\IeC {\'a}lt ugr\IeC {\'a}sv\IeC {\'a}lasz}{18}{subsection.5.9}
 \contentsline {subsection}{\numberline {j}\IeC {\'A}lland\IeC {\'o}sult \IeC {\'e}rt\IeC {\'e}k}{18}{subsection.5.10}
+\contentsline {section}{\numberline {6}Sz\IeC {\"o}gsebess\IeC {\'e}g szab\IeC {\'a}lyoz\IeC {\'a}s \IeC {\'a}llapotvisszacsatol\IeC {\'a}ssal}{19}{section.6}
+\contentsline {subsection}{\numberline {a}P\IeC {\'o}lusok sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{19}{subsection.6.1}
+\contentsline {subsection}{\numberline {b}A szab\IeC {\'a}lyoz\IeC {\'o} m\IeC {\'a}trix sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{20}{subsection.6.2}
+\contentsline {subsection}{\numberline {c}Ugr\IeC {\'a}sf\IeC {\"u}ggv\IeC {\'e}ny}{20}{subsection.6.3}
+\contentsline {subsection}{\numberline {d}\IeC {\'A}lland\IeC {\'o}sult \IeC {\'e}rt\IeC {\'e}k}{21}{subsection.6.4}
+\contentsline {subsection}{\numberline {e}Alapkompenz\IeC {\'a}ci\IeC {\'o} sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{21}{subsection.6.5}
+\contentsline {subsection}{\numberline {f}Alapjelkompenz\IeC {\'a}lt ugr\IeC {\'a}sv\IeC {\'a}lasz}{22}{subsection.6.6}
+\contentsline {subsection}{\numberline {g}\IeC {\'A}lland\IeC {\'o}sult \IeC {\'e}rt\IeC {\'e}k}{22}{subsection.6.7}
+\contentsline {subsection}{\numberline {h}Statikus alapjelkompenz\IeC {\'a}ci\IeC {\'o}}{22}{subsection.6.8}
+\contentsline {subsection}{\numberline {i}Statikus alapjelkompenz\IeC {\'a}lt ugr\IeC {\'a}sv\IeC {\'a}lasz}{23}{subsection.6.9}
+\contentsline {subsection}{\numberline {j}\IeC {\'A}lland\IeC {\'o}sult \IeC {\'e}rt\IeC {\'e}k}{23}{subsection.6.10}
