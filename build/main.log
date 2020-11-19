@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.3)  19 NOV 2020 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.3)  19 NOV 2020 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1600,16 +1600,10 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 42.
 LaTeX Warning: Label `fig:1b_step' multiply defined.
 
 
-LaTeX Warning: Label `fig:5c_step' multiply defined.
+LaTeX Warning: Label `fig:6a_allapotter_hatasvazlat' multiply defined.
 
 
-LaTeX Warning: Label `subsec:5d' multiply defined.
-
-
-LaTeX Warning: Label `fig:5f_step' multiply defined.
-
-
-LaTeX Warning: Label `fig:5i_step' multiply defined.
+LaTeX Warning: Label `sub@fig:6a_allapotter_hatasvazlat' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -1865,13 +1859,13 @@ l.23 ...{\'a}sv\IeC {\'a}lasz}{17}{subsection.5.6}
 [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
-<./figures/process-hatasvazlat.pdf, id=218, 1476.05481pt x 518.61069pt>
+<./figures/process-hatasvazlat.pdf, id=172, 1476.05481pt x 518.61069pt>
 File: ./figures/process-hatasvazlat.pdf Graphic file (type pdf)
 <use ./figures/process-hatasvazlat.pdf>
 Package pdftex.def Info: ./figures/process-hatasvazlat.pdf  used on input line 
 36.
 (pdftex.def)             Requested size: 341.43437pt x 119.9585pt.
-<./figures/pi-hatasvazlat.pdf, id=219, 989.51163pt x 283.89572pt>
+<./figures/pi-hatasvazlat.pdf, id=173, 989.51163pt x 283.89572pt>
 File: ./figures/pi-hatasvazlat.pdf Graphic file (type pdf)
 <use ./figures/pi-hatasvazlat.pdf>
 Package pdftex.def Info: ./figures/pi-hatasvazlat.pdf  used on input line 43.
@@ -1887,19 +1881,19 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 33.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<./figures/1a_margin.pdf, id=233, 614.295pt x 794.97pt>
+<./figures/1a_margin.pdf, id=188, 614.295pt x 794.97pt>
 File: ./figures/1a_margin.pdf Graphic file (type pdf)
 <use ./figures/1a_margin.pdf>
 Package pdftex.def Info: ./figures/1a_margin.pdf  used on input line 36.
 (pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
  [4 <./figures/1a_margin.pdf>]
-<./figures/1b_step.pdf, id=333, 614.295pt x 794.97pt>
+<./figures/1b_step.pdf, id=288, 614.295pt x 794.97pt>
 File: ./figures/1b_step.pdf Graphic file (type pdf)
 <use ./figures/1b_step.pdf>
 Package pdftex.def Info: ./figures/1b_step.pdf  used on input line 56.
 (pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
 ) (./2_feladat.tex [5 <./figures/1b_step.pdf>]
-<./figures/2a_margin.pdf, id=373, 614.295pt x 794.97pt>
+<./figures/2a_margin.pdf, id=328, 614.295pt x 794.97pt>
 File: ./figures/2a_margin.pdf Graphic file (type pdf)
 <use ./figures/2a_margin.pdf>
 Package pdftex.def Info: ./figures/2a_margin.pdf  used on input line 38.
@@ -1910,31 +1904,31 @@ File: ./figures/1b_step.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures/1b_step.pdf  used on input line 58.
 (pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
 ) (./3_feladat.tex [7]
-<./figures/pi-hatasvazlat-2.pdf, id=417, 1168.328pt x 283.89572pt>
+<./figures/pi-hatasvazlat-2.pdf, id=371, 1168.328pt x 283.89572pt>
 File: ./figures/pi-hatasvazlat-2.pdf Graphic file (type pdf)
 <use ./figures/pi-hatasvazlat-2.pdf>
 Package pdftex.def Info: ./figures/pi-hatasvazlat-2.pdf  used on input line 11.
 
 (pdftex.def)             Requested size: 298.75264pt x 72.59387pt.
-<./figures/3a_margin.pdf, id=418, 614.295pt x 794.97pt>
+<./figures/3a_margin.pdf, id=372, 614.295pt x 794.97pt>
 File: ./figures/3a_margin.pdf Graphic file (type pdf)
 <use ./figures/3a_margin.pdf>
 Package pdftex.def Info: ./figures/3a_margin.pdf  used on input line 48.
 (pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
  [8 <./figures/pi-hatasvazlat-2.pdf>]
-<./figures/3b_step.pdf, id=433, 614.295pt x 794.97pt>
+<./figures/3b_step.pdf, id=387, 614.295pt x 794.97pt>
 File: ./figures/3b_step.pdf Graphic file (type pdf)
 <use ./figures/3b_step.pdf>
 Package pdftex.def Info: ./figures/3b_step.pdf  used on input line 66.
 (pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
  [9 <./figures/3a_margin.pdf> <./figures/3b_step.pdf>]) (./4_feladat.tex [10]
-<./figures/4a_margin.pdf, id=488, 614.295pt x 794.97pt>
+<./figures/4a_margin.pdf, id=443, 614.295pt x 794.97pt>
 File: ./figures/4a_margin.pdf Graphic file (type pdf)
 <use ./figures/4a_margin.pdf>
 Package pdftex.def Info: ./figures/4a_margin.pdf  used on input line 47.
 (pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
  [11]
-<./figures/4b_step.pdf, id=501, 614.295pt x 794.97pt>
+<./figures/4b_step.pdf, id=456, 614.295pt x 794.97pt>
 File: ./figures/4b_step.pdf Graphic file (type pdf)
 <use ./figures/4b_step.pdf>
 Package pdftex.def Info: ./figures/4b_step.pdf  used on input line 65.
@@ -1949,7 +1943,7 @@ LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
 (Font)              Font shape `U/wasy/m/n' tried instead on input line 9.
 
 (./figures/5a_allapotter_hatasvazlat.pdf_tex
-<./figures/5a_allapotter_hatasvazlat.pdf, id=640, page=1, 1412.8628pt x 615.412
+<./figures/5a_allapotter_hatasvazlat.pdf, id=594, page=1, 1412.8628pt x 615.412
 89pt>
 File: ./figures/5a_allapotter_hatasvazlat.pdf Graphic file (type pdf)
 <use ./figures/5a_allapotter_hatasvazlat.pdf, page 1>
@@ -1957,19 +1951,19 @@ Package pdftex.def Info: ./figures/5a_allapotter_hatasvazlat.pdf , page1 used o
 n input line 56.
 (pdftex.def)             Requested size: 341.43437pt x 148.71626pt.
 ) [14 <./figures/5a_allapotter_hatasvazlat.pdf>]
-<./figures/5c_step.pdf, id=657, 614.295pt x 794.97pt>
+<./figures/5c_step.pdf, id=612, 614.295pt x 794.97pt>
 File: ./figures/5c_step.pdf Graphic file (type pdf)
 <use ./figures/5c_step.pdf>
 Package pdftex.def Info: ./figures/5c_step.pdf  used on input line 112.
 (pdftex.def)             Requested size: 341.43437pt x 237.11786pt.
  [15]
-<./figures/5f_step.pdf, id=673, 614.295pt x 794.97pt>
+<./figures/5f_step.pdf, id=628, 614.295pt x 794.97pt>
 File: ./figures/5f_step.pdf Graphic file (type pdf)
 <use ./figures/5f_step.pdf>
 Package pdftex.def Info: ./figures/5f_step.pdf  used on input line 152.
 (pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
  [16 <./figures/5c_step.pdf>] [17 <./figures/5f_step.pdf>]
-<./figures/5i_step.pdf, id=735, 614.295pt x 794.97pt>
+<./figures/5i_step.pdf, id=689, 614.295pt x 794.97pt>
 File: ./figures/5i_step.pdf Graphic file (type pdf)
 <use ./figures/5i_step.pdf>
 Package pdftex.def Info: ./figures/5i_step.pdf  used on input line 194.
@@ -1977,20 +1971,43 @@ Package pdftex.def Info: ./figures/5i_step.pdf  used on input line 194.
 )
 (./6_feladat.tex [18 <./figures/5i_step.pdf>]
 (./figures/6a_allapotter_hatasvazlat.pdf_tex
-<./figures/6a_allapotter_hatasvazlat.pdf, id=767, page=1, 1621.39186pt x 615.41
-289pt>
+<./figures/6a_allapotter_hatasvazlat.pdf, id=722, page=1, 1534.4561pt x 615.274
+19pt>
 File: ./figures/6a_allapotter_hatasvazlat.pdf Graphic file (type pdf)
 <use ./figures/6a_allapotter_hatasvazlat.pdf, page 1>
 Package pdftex.def Info: ./figures/6a_allapotter_hatasvazlat.pdf , page1 used o
 n input line 56.
-(pdftex.def)             Requested size: 384.1096pt x 145.78645pt.
-)) (./misc/bib.tex [19 <./figures/6a_allapotter_hatasvazlat.pdf>]
+(pdftex.def)             Requested size: 341.43437pt x 136.90042pt.
+)
+(./figures/6a_allapotter_hatasvazlat_stripped.pdf_tex
+<./figures/6a_allapotter_hatasvazlat_stripped.pdf, id=723, page=1, 1328.18547pt
+ x 481.06743pt>
+File: ./figures/6a_allapotter_hatasvazlat_stripped.pdf Graphic file (type pdf)
+<use ./figures/6a_allapotter_hatasvazlat_stripped.pdf, page 1>
+Package pdftex.def Info: ./figures/6a_allapotter_hatasvazlat_stripped.pdf , pag
+e1 used on input line 56.
+(pdftex.def)             Requested size: 298.75264pt x 108.20613pt.
+)
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <9> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 17.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 17.
+
+[19 <./figures/6a_allapotter_hatasvazlat.pdf> <./figures/6a_allapotter_hatasvaz
+lat_stripped.pdf
+
+pdfTeX warning: pdflatex (file ./figures/6a_allapotter_hatasvazlat_stripped.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+>]) (./misc/bib.tex [20]
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 [][]$\T1/pcr/m/n/10 https : / / www . maxongroup . com / maxon / view / product
  / motor / dcmotor / amax /
  []
 
-) [20]
+) [21]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
  (build/main.aux)
@@ -2005,59 +2022,36 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 38128 strings out of 492982
- 708136 string characters out of 6134897
+ 38162 strings out of 492982
+ 708721 string characters out of 6134897
  859833 words of memory out of 5000000
- 40966 multiletter control sequences out of 15000+600000
- 576377 words of font info for 77 fonts, out of 8000000 for 9000
+ 40988 multiletter control sequences out of 15000+600000
+ 582695 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,17n,54p,10398b,773s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.6.10} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.9} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.8} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.7} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.6} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.5} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cmextra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/times/utmr8a.pfb>
-Output written on build/main.pdf (21 pages, 312164 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cme
+xtra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmex
+tra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
+8a.pfb>
+Output written on build/main.pdf (22 pages, 350136 bytes).
 PDF statistics:
- 868 PDF objects out of 1000 (max. 8388607)
- 790 compressed objects within 8 object streams
- 129 named destinations out of 1000 (max. 500000)
- 458 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 844 PDF objects out of 1000 (max. 8388607)
+ 760 compressed objects within 8 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 391 words of extra memory for PDF output out of 10000 (max. 10000000)
 

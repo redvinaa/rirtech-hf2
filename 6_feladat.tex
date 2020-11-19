@@ -5,9 +5,19 @@
 
 \begin{figure}[H]
     \centering
-    \incfig[.9\textwidth]{6a_allapotter_hatasvazlat}
-    \caption{Állapottér modell hatásvázlata}
-    \label{fig:6a_allapotter_hatasvazlat}
+	\begin{subfigure}[H]{\textwidth}
+		\centering
+		\incfig[.8\textwidth]{6a_allapotter_hatasvazlat}
+		\caption{Alapjelkompenzációval}
+		\label{fig:6a_allapotter_hatasvazlat}
+	\end{subfigure}
+	\begin{subfigure}[H]{\textwidth}
+		\centering
+		\incfig[.7\textwidth]{6a_allapotter_hatasvazlat_stripped}
+		\caption{Alapjelkompenzáció nélkül, $\B{\dot{\chi}}:=\B{x}$ helyettesítéssel}
+		\label{fig:6a_allapotter_hatasvazlat}
+	\end{subfigure}
+	\caption{Állapottér modell hatásvázlata}
 \end{figure}
 
 % A pozíció-szabályzott rendszer átviteli függvénye $\fn{W}_\text{p}$ integrálja, vagyis
@@ -16,7 +26,7 @@
 %     \frac{\frac{\Psi}{T_1T_2}}{s^3+\frac{T_1+T_2}{T_1T_2}s^2+\frac{1}{T_1T_2}s}.
 % \end{equation}
 
-Legyen $\dot{\chi}:=x$.
+Legyen $\dot{\B{\chi}}:=\B{x}$.
 
 % Írjuk át ezt állapottér modellre, irányíthatósági kanonikus alakra:
 \begin{equation}
