@@ -13,7 +13,7 @@ T2 = 1.3825e-4;
 Psi = 618.34/un;
 n = 0.1;
 phi_t = pi/3;
-w_nom = 4430/(2*pi);
+w_noload = 4860/(2*pi);
 
 phi = - atan(T1*w) - atan(n*T2*w);
 eq = phi + pi - phi_t;
@@ -34,7 +34,7 @@ margin(Wx);grid
 disp('2/b')
 
 Wcl = Wx/(1+Wx)
-step(Wcl*w_nom);grid;title('')
+step(Wcl*w_noload);grid;title('')
 ylabel('Szögsebesség (rad/s)')
 xlabel('Idő')
 
@@ -47,7 +47,7 @@ syms s
 Wx = Psi*P/ ( (1+s*T1) * (1+s*n*T2) );
 Wcl = Wx/(1+Wx);
 
-X = w_nom/s;
+X = w_noload/s;
 Y = Wcl * X;
 
 w_inf = limit(Y*s, s, 0);

@@ -203,12 +203,6 @@ zlibrarytopaths.code.tex)))
 
 LaTeX Warning: Label `fig:1b_step' multiply defined.
 
-
-LaTeX Warning: Label `fig:6a_allapotter_hatasvazlat' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:6a_allapotter_hatasvazlat' multiply defined.
-
 ) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -260,26 +254,12 @@ LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
 (./figures/5a_allapotter_hatasvazlat.pdf_tex) [14 <./figures/5a_allapotter_hata
 svazlat.pdf>] [15] [16 <./figures/5c_step.pdf>] [17 <./figures/5f_step.pdf>])
 (./6_feladat.tex [18 <./figures/5i_step.pdf>]
-(./figures/6a_allapotter_hatasvazlat.pdf_tex)
-(./figures/6a_allapotter_hatasvazlat_stripped.pdf_tex)
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <9> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 17.
-
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 17.
-
-[19 <./figures/6a_allapotter_hatasvazlat.pdf> <./figures/6a_allapotter_hatasvaz
-lat_stripped.pdf
-
-pdfTeX warning: pdflatex (file ./figures/6a_allapotter_hatasvazlat_stripped.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
->]) (./misc/bib.tex [20]
+(./figures/6a_allapotter_hatasvazlat_jav.pdf_tex)) (./misc/bib.tex [19 <./figur
+es/6a_allapotter_hatasvazlat_jav.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 [][]$\T1/pcr/m/n/10 https : / / www . maxongroup . com / maxon / view / product
  / motor / dcmotor / amax /
-) [21] (build/main.aux)
+) [20] (build/main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -288,20 +268,16 @@ LaTeX Warning: There were multiply-defined labels.
 ist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucr
-r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on build/main.pdf (22 pages, 350136 bytes).
+m/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
+mes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+
+Output written on build/main.pdf (21 pages, 302137 bytes).
 Transcript written on build/main.log.

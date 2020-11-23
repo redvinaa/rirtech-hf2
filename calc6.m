@@ -7,6 +7,8 @@ disp('file: calc6.m')
 %% 6/a
 disp('6/a')
 
+return
+
 % W = b0 / (a2*s^2 + a1*s + a0)
 % T = sqrt(a2/a0)
 % xi = a1 / (2*sqrt(a0*a2))

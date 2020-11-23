@@ -5,74 +5,26 @@
 
 \begin{figure}[H]
     \centering
-	\begin{subfigure}[H]{\textwidth}
-		\centering
-		\incfig[.8\textwidth]{6a_allapotter_hatasvazlat}
-		\caption{Alapjelkompenzációval}
-		\label{fig:6a_allapotter_hatasvazlat}
-	\end{subfigure}
-	\begin{subfigure}[H]{\textwidth}
-		\centering
-		\incfig[.7\textwidth]{6a_allapotter_hatasvazlat_stripped}
-		\caption{Alapjelkompenzáció nélkül, $\B{\dot{\chi}}:=\B{x}$ helyettesítéssel}
-		\label{fig:6a_allapotter_hatasvazlat}
-	\end{subfigure}
-	\caption{Állapottér modell hatásvázlata}
+	\incfig[\textwidth]{6a_allapotter_hatasvazlat_jav}
+	\caption{Integrátorral kiegészített állapottér modell}
+	\label{fig:6a_allapotter_hatasvazlat_jav}
 \end{figure}
 
-% A pozíció-szabályzott rendszer átviteli függvénye $\fn{W}_\text{p}$ integrálja, vagyis
-% \begin{equation}
-%     \fn{W}_\text{p,új} = \frac{\Psi}{s(1+T_1s)(1+T_2s)} =
-%     \frac{\frac{\Psi}{T_1T_2}}{s^3+\frac{T_1+T_2}{T_1T_2}s^2+\frac{1}{T_1T_2}s}.
-% \end{equation}
-
-Legyen $\dot{\B{\chi}}:=\B{x}$.
-
-% Írjuk át ezt állapottér modellre, irányíthatósági kanonikus alakra:
 \begin{equation}
-	\fn{Y} = \frac{\frac{\Psi}{T_1T_2}}{s^3+\frac{T_1+T_2}{T_1T_2}s^2+\frac{1}{T_1T_2}s}\fn{U}
+	\mat{\dot{\B{x}}_\text{c}\\\dot{\B{x}}_\text{I}} =
+		\mat{\B{A}+\B{B}\B{K}_\text{x}&\B{B}\B{K}_\text{I}\\-\B{C}&0}\mat{\B{x}_\text{c}\\\B{x}_\text{I}}+\mat{0\\1}\B{r}\\
+	% \B{T}\mat{\dot{\B{x}}\\\dot{\B{x}}_\text{I}} &=
+	%     \B{T}\mat{\B{A}&0\\-\B{C}&0}\mat{\dot{\B{x}}\\\dot{\B{x}}_\text{I}} +
+	%     \B{T}\mat{\B{B}\\1}\B{u}
 \end{equation}
 \begin{equation}
-	\fn{X} := \frac{1}{s^3+\frac{T_1+T_2}{T_1T_2}s^2+\frac{1}{T_1T_2}s}\fn{U}\,\Rightarrow
-\end{equation}
-\begin{equation}
-	u = \dddot{\chi} + \frac{T_1+T_2}{T_1T_2}\ddot{\chi} + \frac{1}{T_1T_2}\dot{\chi}\,\Rightarrow
-\end{equation}
-\begin{equation}
-	\underbrace{\mat{\dot{\chi}\\\ddot{\chi}\\\dddot{\chi}}}_{\dot{\B{\chi} }}
-	= \underbrace{\mat{0&1&0\\0&0&1\\0&-\frac{1}{T_1T_2}&-\frac{T_1+T_2}{T_1T_2}}}_{\B{A}}
-	\underbrace{\mat{\chi\\\dot{\chi}\\\ddot{\chi}}}_{\B{\chi}}
-	+ \underbrace{\mat{0\\0\\1}}_{\B{B}}\B{u}
-\end{equation}
-\begin{equation}
-	\B{y} = \underbrace{\mat{\frac{\Psi}{T_1T_2}&0&0}}_{\B{C}}\mat{\chi\\\dot{\chi}\\\ddot{\chi}} + \underbrace{\mat{0}}_{\B{D}}\B{u}
+	\B{A}_\text{ext} = \mat{0&1&0&\cdots&0\\\vdots&&\B{A}_\text{c}\\0}\,
+	\B{B}_\text{ext} = \mat{0\\\vdots\\0\\1}\,
+	\B{C}_\text{ext} = \mat{0&\B{C}_\text{c}}
 \end{equation}
 
-%   A feladatkiírás alapján a domináns időállandó $\widetilde{T}_1=50~\text{ms}~=0,05$ s
-%   kell hogy legyen.
-%   
-%   Az átviteli függvény karakterisztikus egyenlete legyen adott a következő alakban
-%   \begin{equation}
-%   	\fn{p}(s) = s^2 + a_1 s + a_0 s.
-%   \end{equation}
-%   A túllövés a $\xi$ csillapítástól függ, amelyek adottak, így ki tudjuk számítani a
-%   kívánt $a_1$ és $a_0$ együtthatókat.
-%   \begin{align}
-%   	\widetilde{T}_1 &= \sqrt{\frac{1}{a_0}}\,\Rightarrow a_0 = 400\\
-%   	\Delta v        &= 0,1 = \operatorname{exp}\brc{\frac{-\xi\pi}{\sqrt{1-\xi^2}} }
-%   	\,\Rightarrow \xi = 0,5911\\
-%   	\xi             &= \frac{a_1}{2\sqrt{a_0}}\,\Rightarrow a_1 = 23,6462
-%   \end{align}
-%   % W = b0 / (a2*s^2 + a1*s + a0)
-%   % T = sqrt(a2/a0)
-%   % xi = a1 / (2*sqrt(a0*a2))
-%   % dv = exp(-xi*pi / sqrt(1-xi^2))
-%   %
-%   Tehát \fbox{$a_0 = 400$ és $a_1 = 23,65$}.
-%   
-%   
-%   %}}}
-%   
+%}}}
+  
 %   %{{{ A szabályozó mátrix számítása
 %   \subsection{A szabályozó mátrix számítása}
 %   
