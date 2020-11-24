@@ -56,8 +56,8 @@ disp('5/c')
 
 un = 36;
 Psi = 618.34/un;
-w_nom = 4430/(2*pi)
-w_noload = 5860/(2*pi)
+w_nom = 4430*(2*pi)/60;
+w_noload = 5860*(2*pi)/60;
 
 Kx = [k1 k2]
 A = [0 1; -1/(T1*T2) -(T1+T2)/(T1*T2)]

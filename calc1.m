@@ -12,7 +12,7 @@ T1 = 0.0145
 T2 = 1.3825e-4
 Psi = 618.34/un
 phi_t = pi/3
-w_noload = 4860/(2*pi)
+w_noload = 5860*(2*pi)/60;
 
 phi = -pi/2 - atan(T2*w);
 eq = phi + pi - phi_t;

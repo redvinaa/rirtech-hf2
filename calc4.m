@@ -14,7 +14,7 @@ T2_num = 1.3825e-4;
 Psi = 618.34/un;
 n = 0.1;
 phi_t = pi/3;
-w_nom = 4430/(2*pi);
+w_nom = 4430*(2*pi)/60;
 
 Wc = P * (1+s*TI)/s * (1+s*T2)/(1+T2*n*s)
 Wp = Psi/( (1+s*T1) * (1+s*T2) );

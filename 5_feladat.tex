@@ -105,7 +105,7 @@ Ebből a keresett mátrix
 %{{{ Ugrásfüggvény
 \subsection{Ugrásfüggvény}
 
-Az üresjárati szögsebesség $\omega_\text{noload} = 5860\text{ rpm} = 932.648~\frac{\text{rad}}{\text{s}}$. Az ugrásválaszt a rendszermátrixok ismeretében a MATLAB \verb|step| függvénye rajzolja ki.
+Az üresjárati szögsebesség $\omega_\text{noload} = 5860\text{ rpm} = 613,6578~\frac{\text{rad}}{\text{s}}$. Az ugrásválaszt a rendszermátrixok ismeretében a MATLAB \verb|step| függvénye rajzolja ki.
 
 \begin{figure}[H]
 	\centering
@@ -124,7 +124,7 @@ Az állapottér rendszerünket írjuk vissza MATLAB segítségével átviteli f�
 alakra ($\fn{W}_\text{cl}$), amivel könnyen tudunk állandósult értéket számolni.
 A bemenet legyen $\fn{X} = \frac{\omega_\text{noload}}{s}$, a rendszer válasz $\fn{Y} = \fn{W}_\text{cl}\fn{X}$.
 
-A végérték-tétel alapján az állandósult szögsebesség $\omega_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 2\cdot10^7$.%TODO
+A végérték-tétel alapján az állandósult szögsebesség $\omega_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 1,3145\cdot10^7$.%TODO
 
 %}}}
 
@@ -160,7 +160,7 @@ Ezt a következő összefüggés adja meg:
 \subsection{Állandósult érték}
 
 \Aref{subsec:5d}. részfeladathoz hasonló módon járunk el.
-A végérték-tétel alapján az állandósult szögsebesség $\omega_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 932,648$.%TODO
+A végérték-tétel alapján az állandósult szögsebesség $\omega_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 613,6578$.
 
 %}}}
 
@@ -201,6 +201,6 @@ Az egységugrás válasz ebből a szokásos módon számítható.
 %{{{ Állandósult érték
 \subsection{Állandósult érték}
 
-A végérték-tétel alapján az állandósult szögsebesség $\omega_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 932,648$.
+A végérték-tétel alapján az állandósult szögsebesség $\omega_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 613,6578$.
 
 %}}}

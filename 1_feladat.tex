@@ -48,7 +48,7 @@ Az előrevezető ág $\fn{W}_\text{x}$, a zárt kör átviteli függvénye ebbő
 	\fn{W}_\text{cl} = \frac{\fn{W}_\text{x}}{1+\fn{W}_\text{x}},
 \end{equation}
 mivel a visszacsatoló ágban $\fn{W}_\text{fb}=1$.
-Ezt meg kell szorozni az $\omega_\text{noload} = 5860$ rpm $ = 932.648~\frac{\text{rad}}{\text{s}} $ referencia szögsebességgel.
+Ezt meg kell szorozni az $\omega_\text{noload} = 5860$ rpm $ = 613,6578~\frac{\text{rad}}{\text{s}} $ referencia szögsebességgel.
 
 A PI-szabályozott rendszer egységugrás-válaszát a MATLAB-os \verb|step| függvény adja meg.
 \begin{figure}[H]
@@ -65,6 +65,6 @@ A PI-szabályozott rendszer egységugrás-válaszát a MATLAB-os \verb|step| fü
 
 A bemenet legyen $\fn{X} = \frac{\omega_\text{ref}}{s}$, a rendszer válasz $\fn{Y} = \fn{W}_\text{cl}\fn{X}$.
 
-A végérték-tétel alapján az állandósult szögsebesség $\omega_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 773,4930$.
+A végérték-tétel alapján az állandósult szögsebesség $\omega_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 613,6578$.
 
 %}}}
