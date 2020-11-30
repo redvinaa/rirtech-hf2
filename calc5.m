@@ -34,6 +34,8 @@ eq = xi - a1 / (2*sqrt(a0*a2));
 a1 = solve(eq, a1);
 a1 = double(a1)
 
+polusok = roots([1 a1 a0])
+
 
 syms k1 k2
 
@@ -49,6 +51,7 @@ k1 = double(k1)
 eq = -(T1+T2)/(T1*T2) - k2 + a1;
 k2 = solve(eq, k2);
 k2 = double(k2)
+pause
 
 
 %% 5/c

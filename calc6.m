@@ -67,7 +67,7 @@ B = [0; 1]
 C = [Psi/(T1*T2) 0]
 D = [0]
 
-A_new = A - B*Kx
+A_new = [A - B*Kx B*KI; -C 0]
 
 sys = ss(A_new, B, C, D);
 

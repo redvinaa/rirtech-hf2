@@ -46,7 +46,7 @@ kell hogy legyen.
 
 Az átviteli függvény karakterisztikus egyenlete legyen adott a következő alakban
 \begin{equation}
-	\fn{p}(s) = s^2 + a_1 s + a_0 s.
+	\fn{p}(s) = s^2 + a_1 s + a_0.
 \end{equation}
 A túllövés a $\xi$ csillapítástól függ, amelyek adottak, így ki tudjuk számítani a
 kívánt $a_1$ és $a_0$ együtthatókat.
@@ -61,8 +61,11 @@ kívánt $a_1$ és $a_0$ együtthatókat.
 % xi = a1 / (2*sqrt(a0*a2))
 % dv = exp(-xi*pi / sqrt(1-xi^2))
 %
-Tehát \fbox{$a_0 = 400$ és $a_1 = 23,65$}.
-
+Tehát \fbox{$a_0 = 400$ és $a_1 = 23,65$}, ebből a pólusok
+\begin{align}
+	p_1 &= -11,8231 + 16,1312i\\
+	p_2 &= -11.8231 - 16.1323i.
+\end{align}
 
 %}}}
 

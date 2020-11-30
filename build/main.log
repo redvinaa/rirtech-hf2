@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.3)  24 NOV 2020 11:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.3)  30 NOV 2020 14:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1908,7 +1908,7 @@ Package pdftex.def Info: ./figures/pi-hatasvazlat-2.pdf  used on input line 11.
 File: ./figures/3a_margin.pdf Graphic file (type pdf)
 <use ./figures/3a_margin.pdf>
 Package pdftex.def Info: ./figures/3a_margin.pdf  used on input line 48.
-(pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
+(pdftex.def)             Requested size: 298.75264pt x 211.62656pt.
  [8 <./figures/pi-hatasvazlat-2.pdf>]
 <./figures/3b_step.pdf, id=386, 614.295pt x 794.97pt>
 File: ./figures/3b_step.pdf Graphic file (type pdf)
@@ -1920,7 +1920,7 @@ Package pdftex.def Info: ./figures/3b_step.pdf  used on input line 66.
 File: ./figures/4a_margin.pdf Graphic file (type pdf)
 <use ./figures/4a_margin.pdf>
 Package pdftex.def Info: ./figures/4a_margin.pdf  used on input line 47.
-(pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
+(pdftex.def)             Requested size: 298.75264pt x 211.62656pt.
  [11]
 <./figures/4b_step.pdf, id=455, 614.295pt x 794.97pt>
 File: ./figures/4b_step.pdf Graphic file (type pdf)
@@ -1948,24 +1948,24 @@ n input line 56.
 <./figures/5c_step.pdf, id=611, 614.295pt x 794.97pt>
 File: ./figures/5c_step.pdf Graphic file (type pdf)
 <use ./figures/5c_step.pdf>
-Package pdftex.def Info: ./figures/5c_step.pdf  used on input line 112.
+Package pdftex.def Info: ./figures/5c_step.pdf  used on input line 115.
 (pdftex.def)             Requested size: 341.43437pt x 237.11786pt.
  [15]
-<./figures/5f_step.pdf, id=627, 614.295pt x 794.97pt>
+<./figures/5f_step.pdf, id=629, 614.295pt x 794.97pt>
 File: ./figures/5f_step.pdf Graphic file (type pdf)
 <use ./figures/5f_step.pdf>
-Package pdftex.def Info: ./figures/5f_step.pdf  used on input line 152.
+Package pdftex.def Info: ./figures/5f_step.pdf  used on input line 155.
 (pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
  [16 <./figures/5c_step.pdf>] [17 <./figures/5f_step.pdf>]
-<./figures/5i_step.pdf, id=687, 614.295pt x 794.97pt>
+<./figures/5i_step.pdf, id=689, 614.295pt x 794.97pt>
 File: ./figures/5i_step.pdf Graphic file (type pdf)
 <use ./figures/5i_step.pdf>
-Package pdftex.def Info: ./figures/5i_step.pdf  used on input line 194.
+Package pdftex.def Info: ./figures/5i_step.pdf  used on input line 197.
 (pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
 )
 (./6_feladat.tex [18 <./figures/5i_step.pdf>]
 (./figures/6a_allapotter_hatasvazlat_jav.pdf_tex
-<./figures/6a_allapotter_hatasvazlat_jav.pdf, id=721, page=1, 1698.0208pt x 512
+<./figures/6a_allapotter_hatasvazlat_jav.pdf, id=723, page=1, 1698.0208pt x 512
 .853pt>
 File: ./figures/6a_allapotter_hatasvazlat_jav.pdf Graphic file (type pdf)
 <use ./figures/6a_allapotter_hatasvazlat_jav.pdf, page 1>
@@ -1993,13 +1993,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 38107 strings out of 492982
- 707857 string characters out of 6134897
+ 38109 strings out of 492982
+ 707883 string characters out of 6134897
  859833 words of memory out of 5000000
  40957 multiletter control sequences out of 15000+600000
  576377 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,15n,54p,10398b,773s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,15n,54p,10398b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/
@@ -2014,10 +2014,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb>
-Output written on build/main.pdf (21 pages, 302009 bytes).
+Output written on build/main.pdf (21 pages, 303017 bytes).
 PDF statistics:
- 813 PDF objects out of 1000 (max. 8388607)
- 736 compressed objects within 8 object streams
- 117 named destinations out of 1000 (max. 500000)
+ 815 PDF objects out of 1000 (max. 8388607)
+ 738 compressed objects within 8 object streams
+ 119 named destinations out of 1000 (max. 500000)
  386 words of extra memory for PDF output out of 10000 (max. 10000000)
 

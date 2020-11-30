@@ -16,7 +16,7 @@ n = 0.1;
 phi_t = pi/3;
 w_nom = 4430*(2*pi)/60;
 
-Wc = P* (1+s*TI)/s
+Wc = P * (1+s*TI)/(s*TI)
 Wp = Psi/( (1+s*T1) * (1+s*T2) );
 Wx = simplify(Wc*Wp / s);
 Wcl = Wx/(1+Wx);
@@ -47,7 +47,7 @@ P_num = solve(abs(Wx_num)-1, P);
 P_num = double(P_num)
 
 s = tf('s')
-Wc = P_num* (1+s*TI_num)/s
+Wc = P_num* (1+s*TI_num)/(s*TI_num)
 Wp = Psi/( (1+s*T1_num) * (1+s*T2_num) );
 Wx = minreal(Wc*Wp / s);
 Wcl = Wx/(1+Wx);
