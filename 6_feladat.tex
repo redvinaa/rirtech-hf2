@@ -11,17 +11,29 @@
 \end{figure}
 
 \begin{equation}
-	\mat{\dot{\B{x}}_\text{c}\\\dot{\B{x}}_\text{I}} =
-		\mat{\B{A}+\B{B}\B{K}_\text{x}&\B{B}\B{K}_\text{I}\\-\B{C}&0}\mat{\B{x}_\text{c}\\\B{x}_\text{I}}+\mat{0\\1}\B{r}\\
-	% \B{T}\mat{\dot{\B{x}}\\\dot{\B{x}}_\text{I}} &=
-	%     \B{T}\mat{\B{A}&0\\-\B{C}&0}\mat{\dot{\B{x}}\\\dot{\B{x}}_\text{I}} +
-	%     \B{T}\mat{\B{B}\\1}\B{u}
+	\mat{\dot{x}_1\\\dot{x}_2\\ \dot{x}_\text{I}} =
+	% \mat{\B{A}_\text{C}&\B{0}\\\begin{minipage}{13mm}{$-1\hspace{3mm}-1$}\end{minipage}&0}
+	\mat{0&0&0\\-5\cdot10^5&-7302&0\\-1&-1&0}\mat{x_1\\x_2\\x_\text{I}} +
+	\mat{0\\1\\0}u
 \end{equation}
 \begin{equation}
-	\B{A}_\text{ext} = \mat{0&1&0&\cdots&0\\\vdots&&\B{A}_\text{c}\\0}\,
-	\B{B}_\text{ext} = \mat{0\\\vdots\\0\\1}\,
-	\B{C}_\text{ext} = \mat{0&\B{C}_\text{c}}
+	u = \mat{k_1&k_2&k_\text{I}}\mat{x_1\\x_2\\x_\text{I}}
 \end{equation}
+
+A zárt rendszer pólusai $p_1 = -11,8 + 16,1i$, $p_2$ ennek komplex konjugáltja.
+
+% \begin{equation}
+%     \mat{\dot{\B{x}}_\text{c}\\\dot{\B{x}}_\text{I}} =
+%         \mat{\B{A}+\B{B}\B{K}_\text{x}&\B{B}\B{K}_\text{I}\\-\B{C}&0}\mat{\B{x}_\text{c}\\\B{x}_\text{I}}+\mat{0\\1}\B{r}\\
+%     % \B{T}\mat{\dot{\B{x}}\\\dot{\B{x}}_\text{I}} &=
+%     %     \B{T}\mat{\B{A}&0\\-\B{C}&0}\mat{\dot{\B{x}}\\\dot{\B{x}}_\text{I}} +
+%     %     \B{T}\mat{\B{B}\\1}\B{u}
+% \end{equation}
+% \begin{equation}
+%     \B{A}_\text{ext} = \mat{0&1&0&\cdots&0\\\vdots&&\B{A}_\text{c}\\0}\,
+%     \B{B}_\text{ext} = \mat{0\\\vdots\\0\\1}\,
+%     \B{C}_\text{ext} = \mat{0&\B{C}_\text{c}}
+% \end{equation}
 
 %}}}
   

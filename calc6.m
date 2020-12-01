@@ -7,13 +7,36 @@ disp('file: calc6.m')
 %% 6/a
 disp('6/a')
 
-return
-
 % W = b0 / (a2*s^2 + a1*s + a0)
 % T = sqrt(a2/a0)
 % xi = a1 / (2*sqrt(a0*a2))
 % dv = exp(-xi*pi / sqrt(1-xi^2))
 
+T1 = 0.0145;
+T2 = 1.3825e-4;
+A = [0 1; -1/(T1*T2) -(T1+T2)/(T1*T2)]
+A_new = [0 1 0; -1/(T1*T2) -(T1+T2)/(T1*T2) 0; -1 -1 0]
+
+B_new = [0; 1; 0]
+
+a0 = 400
+a1 = 23.65
+
+p2 = roots([1 a1 a0])
+p1 = p2(1)
+p2 = p2(2)
+a0 = 400
+a1 = 23.6462
+
+p2_ = roots([1 a1 a0])
+p1_ = p2_(1)
+p2_ = p2_(2)
+
+p1-p1_
+p2-p2_
+
+
+pause
 
 syms a0 a1 % a2
 syms xi T

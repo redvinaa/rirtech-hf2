@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.3)  30 NOV 2020 14:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.3)  1 DEC 2020 19:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1586,10 +1586,34 @@ Package: cancel 2013/04/12 v2.2 Cancel math terms
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-))
+)
 (/usr/share/texlive/texmf-dist/tex/latex/was/icomma.sty
 Package: icomma 2002/03/10 v2.0 (WaS)
-) (./misc/setup.tex
+))
+(/usr/share/texlive/texmf-dist/tex/latex/arydshln/arydshln.sty
+Package: arydshln 2016/04/28 v1.73 
+\dashlinedash=\dimen333
+\dashlinegap=\dimen334
+\adl@box=\box104
+\adl@height=\dimen335
+\adl@heightsave=\dimen336
+\adl@depth=\dimen337
+\adl@depthsave=\dimen338
+\adl@finaldepth=\dimen339
+\adl@columns=\count355
+\adl@ncol=\count356
+\adl@currentcolumn=\count357
+\adl@currentcolumnsave=\count358
+\adl@totalheight=\count359
+\adl@totalheightsave=\count360
+\adl@dash=\count361
+\adl@gap=\count362
+\adl@cla=\count363
+\adl@clb=\count364
+\adl@everyvbox=\toks48
+\adl@LTpagetotal=\dimen340
+)
+(./misc/setup.tex
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -1658,17 +1682,17 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count355
-\scratchdimen=\dimen333
-\scratchbox=\box104
-\nofMPsegments=\count356
-\nofMParguments=\count357
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count358
-\MPscratchDim=\dimen334
-\MPnumerator=\count359
-\makeMPintoPDFobject=\count360
-\everyMPtoPDFconversion=\toks49
+\scratchcounter=\count365
+\scratchdimen=\dimen341
+\scratchbox=\box105
+\nofMPsegments=\count366
+\nofMParguments=\count367
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count368
+\MPscratchDim=\dimen342
+\MPnumerator=\count369
+\makeMPintoPDFobject=\count370
+\everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1779,7 +1803,7 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box105
+\AtBeginShipoutBox=\box106
 Package hyperref Info: Link coloring ON on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1788,7 +1812,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count361
+\c@section@level=\count371
 )
 LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
@@ -1807,13 +1831,13 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count362
+\c@lstlisting=\count372
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 LaTeX Info: Redefining \cal on input line 496.
 LaTeX Info: Redefining \mit on input line 497.
 )
-\c__siunitx_mathsf_int=\count363
+\c__siunitx_mathsf_int=\count373
 LaTeX Font Info:    Try loading font information for U+msa on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1829,7 +1853,7 @@ LaTeX Font Info:    Try loading font information for U+wasy on input line 7.
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-\c__siunitx_mathtt_int=\count364
+\c__siunitx_mathtt_int=\count374
  (./misc/title.tex
 [1
 
@@ -1948,24 +1972,24 @@ n input line 56.
 <./figures/5c_step.pdf, id=611, 614.295pt x 794.97pt>
 File: ./figures/5c_step.pdf Graphic file (type pdf)
 <use ./figures/5c_step.pdf>
-Package pdftex.def Info: ./figures/5c_step.pdf  used on input line 115.
+Package pdftex.def Info: ./figures/5c_step.pdf  used on input line 113.
 (pdftex.def)             Requested size: 341.43437pt x 237.11786pt.
  [15]
 <./figures/5f_step.pdf, id=629, 614.295pt x 794.97pt>
 File: ./figures/5f_step.pdf Graphic file (type pdf)
 <use ./figures/5f_step.pdf>
-Package pdftex.def Info: ./figures/5f_step.pdf  used on input line 155.
+Package pdftex.def Info: ./figures/5f_step.pdf  used on input line 153.
 (pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
  [16 <./figures/5c_step.pdf>] [17 <./figures/5f_step.pdf>]
-<./figures/5i_step.pdf, id=689, 614.295pt x 794.97pt>
+<./figures/5i_step.pdf, id=693, 614.295pt x 794.97pt>
 File: ./figures/5i_step.pdf Graphic file (type pdf)
 <use ./figures/5i_step.pdf>
-Package pdftex.def Info: ./figures/5i_step.pdf  used on input line 197.
+Package pdftex.def Info: ./figures/5i_step.pdf  used on input line 195.
 (pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
 )
 (./6_feladat.tex [18 <./figures/5i_step.pdf>]
 (./figures/6a_allapotter_hatasvazlat_jav.pdf_tex
-<./figures/6a_allapotter_hatasvazlat_jav.pdf, id=723, page=1, 1698.0208pt x 512
+<./figures/6a_allapotter_hatasvazlat_jav.pdf, id=726, page=1, 1698.0208pt x 512
 .853pt>
 File: ./figures/6a_allapotter_hatasvazlat_jav.pdf Graphic file (type pdf)
 <use ./figures/6a_allapotter_hatasvazlat_jav.pdf, page 1>
@@ -1993,13 +2017,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 38109 strings out of 492982
- 707883 string characters out of 6134897
- 859833 words of memory out of 5000000
- 40957 multiletter control sequences out of 15000+600000
+ 38314 strings out of 492982
+ 710649 string characters out of 6134897
+ 865595 words of memory out of 5000000
+ 41158 multiletter control sequences out of 15000+600000
  576377 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,15n,54p,10398b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,16n,54p,10398b,773s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/
@@ -2014,10 +2038,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb>
-Output written on build/main.pdf (21 pages, 303017 bytes).
+Output written on build/main.pdf (21 pages, 304045 bytes).
 PDF statistics:
- 815 PDF objects out of 1000 (max. 8388607)
- 738 compressed objects within 8 object streams
+ 818 PDF objects out of 1000 (max. 8388607)
+ 741 compressed objects within 8 object streams
  119 named destinations out of 1000 (max. 500000)
  386 words of extra memory for PDF output out of 10000 (max. 10000000)
 

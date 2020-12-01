@@ -17,7 +17,7 @@
 \contentsline {section}{\numberline {5}Sz\IeC {\"o}gsebess\IeC {\'e}g szab\IeC {\'a}lyoz\IeC {\'a}s \IeC {\'a}llapotvisszacsatol\IeC {\'a}ssal}{14}{section.5}
 \contentsline {subsection}{\numberline {a}P\IeC {\'o}lusok sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{14}{subsection.5.1}
 \contentsline {subsection}{\numberline {b}A szab\IeC {\'a}lyoz\IeC {\'o} m\IeC {\'a}trix sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{15}{subsection.5.2}
-\contentsline {subsection}{\numberline {c}Ugr\IeC {\'a}sf\IeC {\"u}ggv\IeC {\'e}ny}{16}{subsection.5.3}
+\contentsline {subsection}{\numberline {c}Ugr\IeC {\'a}sf\IeC {\"u}ggv\IeC {\'e}ny}{15}{subsection.5.3}
 \contentsline {subsection}{\numberline {d}\IeC {\'A}lland\IeC {\'o}sult \IeC {\'e}rt\IeC {\'e}k}{16}{subsection.5.4}
 \contentsline {subsection}{\numberline {e}Alapkompenz\IeC {\'a}ci\IeC {\'o} sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'a}sa}{16}{subsection.5.5}
 \contentsline {subsection}{\numberline {f}Alapjelkompenz\IeC {\'a}lt ugr\IeC {\'a}sv\IeC {\'a}lasz}{17}{subsection.5.6}

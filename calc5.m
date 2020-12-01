@@ -7,35 +7,31 @@ disp('file: calc5.m')
 %% 5/a
 disp('5/a')
 
-% W = b0 / (a2*s^2 + a1*s + a0)
-% T = sqrt(a2/a0)
-% xi = a1 / (2*sqrt(a0*a2))
-% dv = exp(-xi*pi / sqrt(1-xi^2))
-
-
-syms a0 a1 % a2
-syms xi T
+syms xi T wn
 a2 = 1;
 dv_num = .1
 T_num = .05
+th3_num = .03
 
 % xi
 eq = exp(-xi*pi / sqrt(1-xi^2)) - dv_num;
 xi = solve(eq, xi);
 xi = vpa(xi( vpa(xi)>0 ))
 
-% a0
-eq = sqrt(a2/a0) - T_num;
-a0 = solve(eq, a0);
-a0 = double(a0)
+% wn
+eq = log(1/th3_num) / (xi*wn) - T_num
+wn = solve(eq, wn);
+wn = vpa(wn( vpa(wn)>0 ))
 
-% a1
-eq = xi - a1 / (2*sqrt(a0*a2));
-a1 = solve(eq, a1);
-a1 = double(a1)
+beta = wn*xi
+wd = wn*sqrt(1-xi^2)
 
-polusok = roots([1 a1 a0])
+p1 = double(-beta+1i*wd)
+p2 = double(-beta-1i*wd)
 
+a1 = -(p1+p2)
+a0 = p1*p2
+pause
 
 syms k1 k2
 
@@ -77,6 +73,7 @@ opt.StepAmplitude = w_noload;
 
 step(sys, opt);grid;title('')
 stepinfo(sys)
+pause
 
 
 %% 5/d
@@ -94,6 +91,7 @@ Y = Wcl * X;
 
 y_lim = limit(vpa(Y*s), s, 0);
 y_lim = double(y_lim)
+pause
 
 
 %% 5/e
@@ -103,6 +101,7 @@ Kr = -inv(C*inv(A_new)*B)
 % Kr = rscale(A, B, C, D, K)
 B_new = B*Kr;
 sys = ss(A_new, B_new, C, D);
+pause
 
 
 %% 5/f
@@ -113,6 +112,7 @@ opt.StepAmplitude = w_noload;
 
 step(sys, opt);grid;title('')
 stepinfo(sys)
+pause
 
 
 %% 5/g
@@ -130,6 +130,7 @@ Y = Wcl * X;
 
 y_lim = limit(vpa(Y*s), s, 0);
 y_lim = double(y_lim)
+pause
 
 
 %% 5/h
@@ -138,6 +139,7 @@ disp('5/h')
 Kaj = inv([A B; C D])*[0;0;1];
 Krx = Kaj(1:2)
 Kru = Kaj(3)
+pause
 
 
 %% 5/i
@@ -162,6 +164,7 @@ W = tf(n, d);
 
 step(W*r);grid;title('')
 stepinfo(tf(n, d))
+pause
 
 
 %% 5/j
