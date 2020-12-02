@@ -19,7 +19,7 @@
 %     u = \mat{k_1&k_2&k_\text{I}}\mat{x_1\\x_2\\x_\text{I}}
 % \end{equation}
 
-A zárt rendszer pólusai $p_1 = -70,13 + 95.69i$, $p_2$ ennek komplex konjugáltja.
+A zárt rendszer pólusai $p_1 = -70,13 + 95.69i$, $p_2$ ennek komplex konjugáltja, $p_3$ pedig a feladat kiírás alapján:
 \begin{equation}
 	p_3 = 3\operatorname{Re}(p_1).
 \end{equation}
@@ -42,24 +42,25 @@ A zárt rendszer pólusai $p_1 = -70,13 + 95.69i$, $p_2$ ennek komplex konjugál
 %{{{ A szabályozó mátrix számítása
 \subsection{A szabályozó mátrix számítása}
 
+A kívánt karakterisztikus polinom és rendszermátrix:
 \begin{equation}
-	\widetilde{\fn{p}}(s) = s^3 + \widetilde{a}_2s^2 + \widetilde{a}_1s + \widetilde{a_0}
+	\widetilde{\fn{p}}(s) = s^3 + \widetilde{a}_2s^2 + \widetilde{a}_1s + \widetilde{a_0},
+\end{equation}
+\begin{equation}
+	\widetilde{\B{A}} = \mat{0&1&0\\0&0&1\\-\abs{\widetilde{a}_2}&-\abs{\widetilde{a}_1}&-\abs{\widetilde{a}_0}}.
 \end{equation}
 
+A jelenlegi:
 \begin{equation}
-	\widetilde{\B{A}} = \mat{0&1&0\\0&0&1\\-\abs{\widetilde{a}_2}&-\abs{\widetilde{a}_1}&-\abs{\widetilde{a}_0}}
+	\fn{p}(s) = (s-p_1)(s-p_2)(s-\underbrace{p_3}_{\equiv0}) = s^3 + a_2s^2 + a_1s + a_0,
+\end{equation}
+\begin{equation}
+	\B{A} = \mat{0&1&0\\0&0&1\\-\abs{a_2}&-\abs{a_1}&-\abs{a_0}}.
 \end{equation}
 
+Ebből
 \begin{equation}
-	\fn{p}(s) = (s-p_1)(s-p_2)(s-\underbrace{p_3}_{\equiv0}) = s^3 + a_2s^2 + a_1s + a_0
-\end{equation}
-
-\begin{equation}
-	\B{A} = \mat{0&1&0\\0&0&1\\-\abs{a_2}&-\abs{a_1}&-\abs{a_0}}
-\end{equation}
-
-\begin{equation}
-	\B{A}_\text{d} = \B{A} - \B{B}\B{K}_\text{x}\,\Rightarrow\,\B{K}_\text{x} = \mat{ 2961089,26& -469771,98& -6951,58}
+	\B{A}_\text{d} = \B{A} - \B{B}\B{K}_\text{x}\,\Rightarrow\,\B{K}_\text{x} = \mat{ 2961089,26& -469771,98& -6951,58}.
 \end{equation}
 
 %}}}
@@ -67,41 +68,29 @@ A zárt rendszer pólusai $p_1 = -70,13 + 95.69i$, $p_2$ ennek komplex konjugál
 %{{{ Ugrásfüggvény
 \subsection{Ugrásfüggvény}
 
-Az üresjárati szögsebesség $\omega_\text{noload} = 5860\text{ rpm} = 932.648~\frac{\text{rad}}{\text{s}}$. Az ugrásválaszt a rendszermátrixok ismeretében a MATLAB \verb|step| függvénye rajzolja ki.
+A referencia bemenet $\B{r}\equiv2\pi$. Az egységugrás függvényt \aref{fig:6c_step}. ábra mutatja.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.8\textwidth, trim=100 240 80 252, clip]{5c_step}
+	\includegraphics[width=.8\textwidth, trim=100 240 80 252, clip]{6c_step}
 	\caption{A rendszer ugrásválasza}
-	\label{fig:5c_step}
+	\label{fig:6c_step}
 \end{figure}
-
 
 %}}}
 
 %{{{ Állandósult érték
 \subsection{Állandósult érték}\label{subsec:5d}
 
-Az állapottér rendszerünket írjuk vissza MATLAB segítségével átviteli függvény
-alakra ($\fn{W}_\text{cl}$), amivel könnyen tudunk állandósult értéket számolni.
-A bemenet legyen $\fn{X} = \frac{\omega_\text{noload}}{s}$, a rendszer válasz $\fn{Y} = \fn{W}_\text{cl}\fn{X}$.
-
-A végérték-tétel alapján az állandósult szögsebesség $\omega_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 2\cdot10^7$.%TODO
+A MATLAB \verb|dcgain| parancsával kiszámolhatjuk, hogy az állandósult szögelfordulás $\varphi_\text{lim} = 18,1811$.
 
 %}}}
 
 %{{{ Alapkompenzáció számítása
 \subsection{Alapkompenzáció számítása}
 
-Ha nincs statikus alapjelkompenzáció, vagyis $\B{K}_\text{rx}\equiv0$, akkor éljünk
-a $\B{K}_\text{ru}:=\B{K}_\text{r}$ jelöléssel, az érthetőség kedvéért.
-
-Most állítsuk be a $\B{K}_\text{r}$ mátrixot úgy, hogy
-$\lim\limits_{t\rightarrow\infty}\B{y}=\B{r}$ igaz legyen.
-Ezt a következő összefüggés adja meg:
-
 \begin{equation}
-	\B{K}_\text{r} = -\brc{\B{C}\widetilde{\B{A}}^{-1}\B{B}}^{-1} = \mat{4,6684\cdot10^{-5}}.
+	\B{K}_\text{r} = \varphi_\text{lim}\at{\B{r}\equiv1}^{-1} = \mat{0,3456}.
 \end{equation}
 
 %}}}
@@ -109,11 +98,14 @@ Ezt a következő összefüggés adja meg:
 %{{{ Alapjelkompenzált ugrásválasz
 \subsection{Alapjelkompenzált ugrásválasz}
 
+Számoljuk ki újra az egységugrás választ, de
+legyen az új bemeneti mátrix $\widetilde{\B{B}}:=\B{K}_\text{r}\B{B}$.
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.7\textwidth, trim=100 240 80 252, clip]{5f_step}
+	\includegraphics[width=.7\textwidth, trim=100 240 80 252, clip]{6f_step}
 	\caption{A rendszer ugrásválasza alapjelkompenzálóval}
-	\label{fig:5f_step}
+	\label{fig:6f_step}
 \end{figure}
 
 %}}}
@@ -121,8 +113,7 @@ Ezt a következő összefüggés adja meg:
 %{{{ Állandósult érték
 \subsection{Állandósult érték}
 
-\Aref{subsec:5d}. részfeladathoz hasonló módon járunk el.
-A végérték-tétel alapján az állandósult szögsebesség $\omega_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 932,648$.%TODO
+Ezek után az állandósult szögelfordulásnak $2\pi$-nek kell lennie: $\varphi_\text{lim} = 6,2832$ rad.
 
 %}}}
 
@@ -133,7 +124,7 @@ Most legyen $\B{K}_\text{rx}$ nullától különböző.
 Ekkor
 \begin{equation}
 	\mat{\B{K}_\text{rx}\\\B{K}_\text{ru}}=\mat{\B{A}&\B{B}\\\B{C}&\B{D}}^{-1}\mat{\B{0}\\\B{I}}
-	= \mat{1,17\cdot10^{-7}\\0\\0,0582}.
+	= \mat{1,17\cdot10^{-7}\\0\\0\\0}.
 \end{equation}
 
 %}}}
@@ -163,6 +154,6 @@ Az egységugrás válasz ebből a szokásos módon számítható.
 %{{{ Állandósult érték
 \subsection{Állandósult érték}
 
-A végérték-tétel alapján az állandósult szögsebesség $\omega_\infty = \lim\limits_{s\rightarrow 0}s\fn{Y} = 932,648$.
+Az állandósult szögelfordulás: $\varphi_\text{lim} = 6,2832$ rad.
 
 %}}}

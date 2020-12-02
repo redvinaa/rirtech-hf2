@@ -31,7 +31,7 @@ xi = vpa(xi( vpa(xi)>0 ))
 % wn
 eq = log(1/th3_num) / (xi*wn) - T_num
 wn = solve(eq, wn);
-wn = vpa(wn( vpa(wn)>0 ))
+wn = double(wn( double(wn)>0 ))
 
 beta = wn*xi
 wd = wn*sqrt(1-xi^2)
@@ -49,7 +49,7 @@ disp('6/b')
 kar_pol = (s-p1)*(s-p2)*(s-p3)
 coef = coeffs(kar_pol, s)
 
-A_d = [0 1 0; 0 0 1; -abs(coef(1)) -abs(coef(2)) -abs(coef(3))]
+A_new = double([0 1 0; 0 0 1; -abs(coef(1)) -abs(coef(2)) -abs(coef(3))])
 B = [0; 0; 1]
 
 p1_orig = -1/T1
@@ -57,11 +57,10 @@ p2_orig = -1/T2
 
 A = [0 1 0; 0 0 1; 0 -abs(p1_orig*p2_orig + p1_orig*p3) -abs(p1_orig+p2_orig)]
 
-K = sym('K', [1 3])
-eq = A_d - (A - B*K)
+Kx = sym('Kx', [1 3])
+eq = A_new - (A - B*Kx)
 sol = solve(eq)
-K = [sol.K1 sol.K2 sol.K3]
-
+Kx = [sol.Kx1 sol.Kx2 sol.Kx3]
 pause
 
 
@@ -73,82 +72,56 @@ Psi = 618.34/un;
 w_nom = 4430*(2*pi)/60;
 w_noload = 5860*(2*pi)/60;
 
-Kx = [k1 k2]
-A = [0 1; -1/(T1*T2) -(T1+T2)/(T1*T2)]
-B = [0; 1]
-C = [Psi/(T1*T2) 0]
+C = [Psi/(T1*T2) 0 0]
 D = [0]
-
-A_new = [A - B*Kx B*KI; -C 0]
 
 sys = ss(A_new, B, C, D);
 
-opt = stepDataOptions;
-opt.StepAmplitude = w_noload;
-
-step(sys, opt);grid;title('')
-stepinfo(sys)
+step(sys*2*pi);grid;title('')
+ylabel('Szögelfordulás (rad)')
+stepinfo(sys*2*pi)
+pause
 
 
 %% 6/d
 disp('6/d')
 
-syms s
-
-[Num,Den] = tfdata(sys,'v')
-syms s
-
-Wcl = poly2sym(Num,s)/poly2sym(Den,s)
-
-X = w_noload/s;
-Y = Wcl * X;
-
-y_lim = limit(vpa(Y*s), s, 0);
-y_lim = double(y_lim)
+phi_lim = dcgain(sys) * 2*pi
+pause
 
 
 %% 6/e
 disp('6/e')
 
-Kr = -inv(C*inv(A_new)*B)
-% Kr = rscale(A, B, C, D, K)
+Kr = 1/dcgain(sys)
 B_new = B*Kr;
 sys = ss(A_new, B_new, C, D);
+pause
 
 
 %% 6/f
 disp('6/f')
 
-opt = stepDataOptions;
-opt.StepAmplitude = w_noload;
-
-step(sys, opt);grid;title('')
-stepinfo(sys)
+step(sys*2*pi);grid;title('')
+ylabel('Szögelfordulás (rad)')
+stepinfo(sys*2*pi)
+pause
 
 
 %% 6/g
 disp('6/g')
 
-syms s
-
-[Num,Den] = tfdata(sys,'v')
-syms s
-
-Wcl = poly2sym(Num,s)/poly2sym(Den,s)
-
-X = w_noload/s;
-Y = Wcl * X;
-
-y_lim = limit(vpa(Y*s), s, 0);
-y_lim = double(y_lim)
+phi_lim = dcgain(sys) * 2*pi
+pause
 
 
 %% 6/h
 disp('6/h')
 
-Kaj = inv([A B; C D])*[0;0;1];
-Krx = Kaj(1:2)
-Kru = Kaj(3)
+Kaj = inv([A B; C D])*[0;0;0;1];
+Krx = Kaj(1:3)
+Kru = Kaj(4)
+pause
 
 
 %% 6/i
@@ -156,11 +129,8 @@ disp('6/i')
 
 close
 
-syms x1 x2 U
-r = w_noload
-
-num = 1/s * B * (Kru + Kx*Krx)% * r
-den = eye(2) - 1/s * (A - B*Kx)
+num = 1/s * B * (Kru + Kx*Krx)
+den = eye(3) - 1/s * (A - B*Kx)
 
 W_sym = C * inv(den) * num;
 W_sym = simplify(vpa(W_sym));
@@ -171,14 +141,13 @@ n = sym2poly(n);
 d = sym2poly(d);
 W = tf(n, d);
 
-step(W*r);grid;title('')
-stepinfo(tf(n, d))
+step(W*2*pi);grid;title('')
+ylabel('Szögelfordulás (rad)')
+stepinfo(W*2*pi)
+pause
 
 
 %% 6/j
 disp('6/j')
 
-syms s
-% W * (r/s) * s = W*r
-y_lim = limit(W_sym*r, s, 0);
-y_lim = double(y_lim)
+y_lim = dcgain(W*2*pi)
