@@ -7,73 +7,62 @@ disp('file: calc6.m')
 %% 6/a
 disp('6/a')
 
-% W = b0 / (a2*s^2 + a1*s + a0)
-% T = sqrt(a2/a0)
-% xi = a1 / (2*sqrt(a0*a2))
-% dv = exp(-xi*pi / sqrt(1-xi^2))
+% {{{ Előző feladatból
+syms xi T wn s
 
-T1 = 0.0145;
-T2 = 1.3825e-4;
-A = [0 1; -1/(T1*T2) -(T1+T2)/(T1*T2)]
-A_new = [0 1 0; -1/(T1*T2) -(T1+T2)/(T1*T2) 0; -1 -1 0]
-
-B_new = [0; 1; 0]
-
-a0 = 400
-a1 = 23.65
-
-p2 = roots([1 a1 a0])
-p1 = p2(1)
-p2 = p2(2)
-a0 = 400
-a1 = 23.6462
-
-p2_ = roots([1 a1 a0])
-p1_ = p2_(1)
-p2_ = p2_(2)
-
-p1-p1_
-p2-p2_
-
-
-pause
-
-syms a0 a1 % a2
-syms xi T
 a2 = 1;
 dv_num = .1
 T_num = .05
+th3_num = .03
+
+un = 36;
+Psi = 618.34/un;
+w_nom = 4430*(2*pi)/60;
+w_noload = 5860*(2*pi)/60;
+
+T1 = 0.0145;
+T2 = 1.3825e-4;
 
 % xi
 eq = exp(-xi*pi / sqrt(1-xi^2)) - dv_num;
 xi = solve(eq, xi);
 xi = vpa(xi( vpa(xi)>0 ))
 
-% a0
-eq = sqrt(a2/a0) - T_num;
-a0 = solve(eq, a0);
-a0 = double(a0)
+% wn
+eq = log(1/th3_num) / (xi*wn) - T_num
+wn = solve(eq, wn);
+wn = vpa(wn( vpa(wn)>0 ))
 
-% a1
-eq = xi - a1 / (2*sqrt(a0*a2));
-a1 = solve(eq, a1);
-a1 = double(a1)
+beta = wn*xi
+wd = wn*sqrt(1-xi^2)
+
+p1 = double(-beta+1i*wd)
+p2 = double(-beta-1i*wd)
+%}}}
+
+p3 = 3* real(p1)
 
 
-syms k1 k2
+%% 6/b
+disp('6/b')
 
-T1 = 0.0145;
-T2 = 1.3825e-4;
+kar_pol = (s-p1)*(s-p2)*(s-p3)
+coef = coeffs(kar_pol, s)
 
-% k1
-eq = -1/(T1*T2) - k1 + a0;
-k1 = solve(eq, k1);
-k1 = double(k1)
+A_d = [0 1 0; 0 0 1; -abs(coef(1)) -abs(coef(2)) -abs(coef(3))]
+B = [0; 0; 1]
 
-% k2
-eq = -(T1+T2)/(T1*T2) - k2 + a1;
-k2 = solve(eq, k2);
-k2 = double(k2)
+p1_orig = -1/T1
+p2_orig = -1/T2
+
+A = [0 1 0; 0 0 1; 0 -abs(p1_orig*p2_orig + p1_orig*p3) -abs(p1_orig+p2_orig)]
+
+K = sym('K', [1 3])
+eq = A_d - (A - B*K)
+sol = solve(eq)
+K = [sol.K1 sol.K2 sol.K3]
+
+pause
 
 
 %% 6/c
