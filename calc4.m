@@ -31,19 +31,21 @@ wci = solve(phi_d_num, w);
 wci = simplify(wci);
 
 
-for i = 4:length(wci)
-	disp(i)
-	phi_subs = subs(phi_num, w, wci(i));
-	eq = pi - phi_t + phi_subs;
-	TI_num = double(solve(vpa(eq), TI));
-	w_num = double(subs(wci(i), [TI], [TI_num]));
-	if w_num >= 0 & imag(w_num) == 0
-		disp('megvan a megoldás');
-		w_num
-		TI_num
-		break
-	end
-end
+% for i = 4:length(wci)
+%     disp(i)
+%     phi_subs = subs(phi_num, w, wci(i));
+%     eq = pi - phi_t + phi_subs;
+%     TI_num = double(solve(vpa(eq), TI));
+%     w_num = double(subs(wci(i), [TI], [TI_num]));
+%     if w_num >= 0 & imag(w_num) == 0
+%         disp('megvan a megoldás');
+%         w_num
+%         TI_num
+%         break
+%     end
+% end
+w_num = 18.4589
+TI_num = 0.2022
 
 % csak a wci(4) megoldás helyes, a többinek vagy nincs megoldása,
 % vagy w<0, vagy w nem valós eredményt ad, ami értelmetlen
@@ -67,9 +69,9 @@ pause
 %% 4/b
 disp('4/b')
 
-step(2*pi*Wcl)
-title('')
-grid
+step(2*pi*Wcl);title('');grid
+ylabel('Szögelfordulás (rad)')
+xlabel('Idő')
 pause
 
 

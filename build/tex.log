@@ -208,9 +208,6 @@ LaTeX Warning: Label `fig:1b_step' multiply defined.
 
 LaTeX Warning: Label `subsec:5d' multiply defined.
 
-
-LaTeX Warning: Label `fig:5i_step' multiply defined.
-
 ) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -264,7 +261,7 @@ svazlat.pdf>] [15] [16 <./figures/5c_step.pdf>] [17 <./figures/5f_step.pdf>])
 (./6_feladat.tex [18 <./figures/5i_step.pdf>]
 (./figures/6a_allapotter_hatasvazlat_jav.pdf_tex) [19 <./figures/6a_allapotter_
 hatasvazlat_jav.pdf>] [20 <./figures/6c_step.pdf>] [21 <./figures/6f_step.pdf>]
-) (./misc/bib.tex [22]
+) (./misc/bib.tex [22 <./figures/6i_step.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 [][]$\T1/pcr/m/n/10 https : / / www . maxongroup . com / maxon / view / product
  / motor / dcmotor / amax /
@@ -288,5 +285,5 @@ t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 
-Output written on build/main.pdf (24 pages, 322349 bytes).
+Output written on build/main.pdf (24 pages, 350049 bytes).
 Transcript written on build/main.log.

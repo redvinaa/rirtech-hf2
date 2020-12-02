@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.3)  2 DEC 2020 13:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.3)  2 DEC 2020 18:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1626,9 +1626,6 @@ LaTeX Warning: Label `fig:1b_step' multiply defined.
 
 LaTeX Warning: Label `subsec:5d' multiply defined.
 
-
-LaTeX Warning: Label `fig:5i_step' multiply defined.
-
 )
 \openout1 = `main.aux'.
 
@@ -2015,11 +2012,12 @@ File: ./figures/6f_step.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures/6f_step.pdf  used on input line 106.
 (pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
  [20 <./figures/6c_step.pdf>] [21 <./figures/6f_step.pdf>]
-File: ./figures/5i_step.pdf Graphic file (type pdf)
-<use ./figures/5i_step.pdf>
-Package pdftex.def Info: ./figures/5i_step.pdf  used on input line 147.
+<./figures/6i_step.pdf, id=846, 614.295pt x 794.97pt>
+File: ./figures/6i_step.pdf Graphic file (type pdf)
+<use ./figures/6i_step.pdf>
+Package pdftex.def Info: ./figures/6i_step.pdf  used on input line 148.
 (pdftex.def)             Requested size: 298.75264pt x 207.47697pt.
-) (./misc/bib.tex [22]
+) (./misc/bib.tex [22 <./figures/6i_step.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 [][]$\T1/pcr/m/n/10 https : / / www . maxongroup . com / maxon / view / product
  / motor / dcmotor / amax /
@@ -2040,10 +2038,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 38362 strings out of 492982
- 711460 string characters out of 6134897
+ 38368 strings out of 492982
+ 711611 string characters out of 6134897
  865595 words of memory out of 5000000
- 41178 multiletter control sequences out of 15000+600000
+ 41183 multiletter control sequences out of 15000+600000
  576377 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,16n,54p,10398b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2061,10 +2059,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb>
-Output written on build/main.pdf (24 pages, 322349 bytes).
+Output written on build/main.pdf (24 pages, 350049 bytes).
 PDF statistics:
- 946 PDF objects out of 1000 (max. 8388607)
- 860 compressed objects within 9 object streams
+ 966 PDF objects out of 1000 (max. 8388607)
+ 879 compressed objects within 9 object streams
  145 named destinations out of 1000 (max. 500000)
- 486 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 491 words of extra memory for PDF output out of 10000 (max. 10000000)
 

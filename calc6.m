@@ -41,6 +41,7 @@ p2 = double(-beta-1i*wd)
 %}}}
 
 p3 = 3* real(p1)
+pause
 
 
 %% 6/b
@@ -79,6 +80,7 @@ sys = ss(A_new, B, C, D);
 
 step(sys*2*pi);grid;title('')
 ylabel('Szögelfordulás (rad)')
+xlabel('Idő')
 stepinfo(sys*2*pi)
 pause
 
@@ -104,6 +106,7 @@ disp('6/f')
 
 step(sys*2*pi);grid;title('')
 ylabel('Szögelfordulás (rad)')
+xlabel('Idő')
 stepinfo(sys*2*pi)
 pause
 
@@ -143,6 +146,7 @@ W = tf(n, d);
 
 step(W*2*pi);grid;title('')
 ylabel('Szögelfordulás (rad)')
+xlabel('Idő')
 stepinfo(W*2*pi)
 pause
 

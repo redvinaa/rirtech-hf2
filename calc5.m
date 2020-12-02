@@ -68,11 +68,10 @@ A_new = A - B*Kx
 
 sys = ss(A_new, B, C, D);
 
-opt = stepDataOptions;
-opt.StepAmplitude = w_noload;
-
-step(sys, opt);grid;title('')
-stepinfo(sys)
+step(sys*w_noload);grid;title('')
+ylabel('Szögsebesség (rad/s)')
+xlabel('Idő')
+stepinfo(sys*w_noload)
 pause
 
 
@@ -107,11 +106,10 @@ pause
 %% 5/f
 disp('5/f')
 
-opt = stepDataOptions;
-opt.StepAmplitude = w_noload;
-
-step(sys, opt);grid;title('')
-stepinfo(sys)
+step(sys*w_noload);grid;title('')
+ylabel('Szögsebesség (rad/s)')
+xlabel('Idő')
+stepinfo(sys*w_noload)
 pause
 
 
@@ -163,7 +161,9 @@ d = sym2poly(d);
 W = tf(n, d);
 
 step(W*r);grid;title('')
-stepinfo(tf(n, d))
+ylabel('Szögsebesség (rad/s)')
+xlabel('Idő')
+stepinfo(tf(n, d)*r)
 pause
 
 

@@ -35,10 +35,12 @@ wci = simplify(wci)
 
 % csak a wci(4) megoldás helyes, a többinek vagy nincs megoldása,
 % vagy w<0, vagy w nem valós eredményt ad, ami értelmetlen
-phi_subs = subs(phi_num, w, wci(4))
-eq = pi - phi_t + phi_subs
-TI_num = double(solve(vpa(eq), TI))
-w_num = double(subs(wci(4), [TI], [TI_num]));
+% phi_subs = subs(phi_num, w, wci(4))
+% eq = pi - phi_t + phi_subs
+% TI_num = double(solve(vpa(eq), TI))
+% w_num = double(subs(wci(4), [TI], [TI_num]));
+TI_num = 0.204
+w_num = 18.2783
 assert( w_num >= 0);       % pipa
 assert( imag(w_num) == 0); % pipa
 
@@ -59,9 +61,9 @@ pause
 %% 3/b
 disp('3/b')
 
-step(2*pi*Wcl)
-title('')
-grid
+step(2*pi*Wcl);title('');grid
+ylabel('Szögelfordulás (rad)')
+xlabel('Idő')
 pause
 
 
